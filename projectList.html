@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">  
+    <link rel="stylesheet" href="css/outputMobile.css">
+    <style>
+        html{
+            font-size: unset!important;
+        }
+        .btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover{
+            background-color: transparent!important;
+        }
+    </style>
+</head>
+<body>
+    <div class="projectList">
+        <div class="flex mb-16 mt-28 items-center justify-between w-90p mx-auto" dir="rtl">
+            <div class="title">
+                <h1 class="font-IRANYekan400 text-lg text-nGray pb-2 border-b mb-2 border-b-main w-fit">
+                    دسته‌بندی پروژه‌ها
+                </h1>
+                <h2 class="font-IRANYekan500 text-base text-newBlack">
+                    Projects Categories
+                </h2>
+              </div>
+
+
+
+              <div class="dropdown">
+                <button class="flex items-center active:focus:bg-white gap-x-3 focus:bg-white hover:bg-white active:bg-white focus-visible:outline-none btn-default dropdown-toggle font-IRANYekan400 text-sm text-blackT" type="button" id="menu1" data-toggle="dropdown">
+                    <span>
+
+                        دسته بندی
+                    </span>
+                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 2.2124L8 10.2124L0 2.2124L1.4 0.787402L7 6.3874L8 7.3626L9 6.3874L14.6 0.787402L16 2.2124Z" fill="#F9920B"/>
+                        </svg>
+                        
+                    
+                
+                </button>
+                <ul class="dropdown-menu m-0 px-5 py-3 rounded-none shadow-none" role="menu" aria-labelledby="menu1" dir="rtl">
+                  <li data-project="/load-project.inc?catid=@catid&refresh=true" role="presentation" class="filterBtn mb-3 py-1 last:mb-0 text-right border-b border-b-nGray last:border-none">
+                    <div class="font-IRANYekan400 text-sm text-right" role="menuitem" tabindex="-1">
+                        
+                        <p>
+                            همه
+                        </p>
+
+                    </div>
+                  
+                </li>
+                
+              
+               
+                </ul>
+              </div>
+        </div>
+
+        <div class="projectContainer projectsList mb-16 w-90p mx-auto" dir="rtl">
+            <div class="projectBox mb-7">
+                <a href="" title="@title">
+                    <div class="imgS">
+                        <img class="w-full rounded-bl-[50px]" src="images/Rectangle 14.png" alt="@title" title="@title">
+                    </div>
+                    <h3 class="font-IRANYekan400 text-sm text-blackT mt-3">
+                        پروژه اداری و تجاری
+                    </h3>
+                </a>
+            </div>
+            <div class="projectBox mb-7">
+                <a href="" title="@title">
+                    <div class="imgS">
+                        <img class="w-full rounded-bl-[50px]" src="images/Rectangle 14.png" alt="@title" title="@title">
+                    </div>
+                    <h3 class="font-IRANYekan400 text-sm text-blackT mt-3">
+                        پروژه اداری و تجاری
+                    </h3>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<script src="js/jQuery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+
+    <script src="js/projectList.js"></script>
+</body>
+</html>

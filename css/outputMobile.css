@@ -737,6 +737,10 @@ video {
   clear: none;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1833,6 +1837,10 @@ video {
   border-radius: 0.25rem;
 }
 
+.rounded-none {
+  border-radius: 0px;
+}
+
 .rounded-b {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
@@ -1969,6 +1977,11 @@ video {
 .border-b-main {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(249 146 11 / var(--tw-border-opacity));
+}
+
+.border-b-nGray {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(168 176 186 / var(--tw-border-opacity));
 }
 
 .border-t-darkGray {
@@ -2115,9 +2128,19 @@ video {
   padding-right: 1.25rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-4 {
@@ -2554,6 +2577,12 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-none {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -2899,6 +2928,10 @@ a {
   transform: translateY(0)!important;
 }
 
+.activeFilterBtn{
+  color: #F9920B!important;
+}
+
 @media (min-width: 480px) {
   .sm\:container {
     width: 100%;
@@ -2929,8 +2962,20 @@ a {
   }
 }
 
+.last\:mb-0:last-child {
+  margin-bottom: 0px;
+}
+
+.last\:border-none:last-child {
+  border-style: none;
+}
+
 .hover\:rounded-bl-\[50px\]:hover {
   border-bottom-left-radius: 50px;
+}
+
+.hover\:bg-white:hover {
+  background-color: #ffff;
 }
 
 .hover\:font-bold:hover {
@@ -2947,12 +2992,29 @@ a {
   text-align: center;
 }
 
+.focus\:bg-white:focus {
+  background-color: #ffff;
+}
+
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
 
 .hover\:focus\:text-center:focus:hover {
   text-align: center;
+}
+
+.focus-visible\:outline-none:focus-visible {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.active\:bg-white:active {
+  background-color: #ffff;
+}
+
+.active\:focus\:bg-white:focus:active {
+  background-color: #ffff;
 }
 
 @media (min-width: 480px) {

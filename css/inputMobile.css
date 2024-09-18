@@ -127,3 +127,7 @@ a {
 .serviceListSlider .swiper-slide-active h3{
   transform: translateY(0)!important;
 }
+
+.activeFilterBtn{
+  color: #F9920B!important;
+}
