@@ -32,6 +32,7 @@ module.exports = {
       'midGray':'#6D6E73',
       'darkGray':'#4C515A',
       'cGray':'#26272B',
+      'aGray':'#26272A',
       'liGray':'#A1A3A9',
       'lightGray':'#E9EAED',
       'newBlack':'#121213',

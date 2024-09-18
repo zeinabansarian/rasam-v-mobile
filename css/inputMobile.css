@@ -123,3 +123,7 @@ a {
   height: 23.11px;
   background-color: #f9920b;
 }
+
+.serviceListSlider .swiper-slide-active h3{
+  transform: translateY(0)!important;
+}
