@@ -34,7 +34,8 @@ module.exports = {
       'cGray':'#26272B',
       'liGray':'#A1A3A9',
       'lightGray':'#E9EAED',
-     
+      'newBlack':'#121213',
+      
       'white':'#ffff',
       'f':'#ffff',
     

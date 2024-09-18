@@ -102,3 +102,24 @@ a {
     display: none;
   }
   
+
+  
+.gallerySliderPagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.gallerySliderPagination .swiper-pagination-bullet {
+  width: 4.2px;
+  height: 13.83px;
+  border-radius: 30px;
+  margin: 0 !important;
+  opacity: 1;
+  background-color: #6d6e73;
+  transition: 0.8s;
+}
+.gallerySliderPagination .swiper-pagination-bullet-active {
+  height: 23.11px;
+  background-color: #f9920b;
+}
