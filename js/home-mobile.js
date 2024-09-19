@@ -9,11 +9,9 @@ document.querySelectorAll('.toggle-button').forEach(btn => {
   const projectSlider = new Swiper('.projectSlider', {
     spaceBetween: 32,
     slidesPerView:1.2,
+    speed:1000,
+  });
 
-  });
-  const projectSlider1 = new Swiper('.projectSlider1', {
-  
-  });
   const swiper = new Swiper('.swiper', {
     slidesPerView: 1.2,
   spaceBetween: 20,
@@ -44,6 +42,7 @@ document.querySelectorAll('.toggle-button').forEach(btn => {
         // And if we need scrollbar
         scrollbar: {
           el: ".CategoriesScrollbar",
+          draggable:true,
         },
       });
   

@@ -779,6 +779,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -823,6 +827,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -833,6 +841,10 @@ video {
 
 .mt-\[108px\] {
   margin-top: 108px;
+}
+
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .box-border {
@@ -965,6 +977,10 @@ video {
 
 .w-90p {
   width: 90%;
+}
+
+.w-\[240px\] {
+  width: 240px;
 }
 
 .w-\[this-is\\\\\] {
@@ -2238,6 +2254,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .px-\[5\%\] {
   padding-left: 5%;
   padding-right: 5%;
@@ -2281,6 +2302,10 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-16 {
   padding-bottom: 4rem;
 }
@@ -2301,12 +2326,16 @@ video {
   padding-bottom: 0.75rem;
 }
 
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
 
-.pb-12 {
-  padding-bottom: 3rem;
+.pb-8 {
+  padding-bottom: 2rem;
 }
 
 .text-left {
@@ -2500,6 +2529,11 @@ video {
 .text-cGray {
   --tw-text-opacity: 1;
   color: rgb(38 39 43 / var(--tw-text-opacity));
+}
+
+.text-midGray {
+  --tw-text-opacity: 1;
+  color: rgb(109 110 115 / var(--tw-text-opacity));
 }
 
 .text-nGray {
@@ -3238,6 +3272,10 @@ a {
 }
 
 .CategoriesScrollbar .swiper-scrollbar-drag {
+  background-color: #f9920b;
+}
+
+.relProScrollbar .swiper-scrollbar-drag {
   background-color: #f9920b;
 }
 
