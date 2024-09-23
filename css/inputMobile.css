@@ -316,3 +316,19 @@ a {
   width: 3px;
   background-color: #f9920b;
 }
+
+
+.ProductCat-Mobile header,
+.Product-List-C header,
+.ProductShow header,
+.articleList-C header,
+.articleShow header,
+.Search-Container header,
+.page header{
+    background-color: #4C515A;
+
+}
+header .Menu-Container{
+    background: #ffffff;
+
+}
