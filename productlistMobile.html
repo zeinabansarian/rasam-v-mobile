@@ -199,7 +199,7 @@
         <div class="Productlist-Container w-full flex flex-col mt-[5em]">
             <div class="Top-S w-full flex flex-col bg-lightGray  pt-[2em] pb-[4em]">
           
-                <div class="ProductCat-S w-[90%] mx-auto flex justify-start items-center flex-col mt-[5em] ">
+                <div class="ProductCat-S w-[90%] mx-auto flex justify-start items-center flex-col mt-[3em] ">
                     <div class="Title w-auto ml-auto flex before:contents-[''] before:absolute 
                     before: right-0 before:bottom-0 before:w-full before:h-[1px] before:bg-Orange
                      justify-start items-center pb-[.5em] relative">
@@ -334,9 +334,10 @@
 
 
 
-                            <div class="parent w-full flex justify-start" id="collapseOne" >
-                                <div class="DropDowns w-full justify-start  duration-[.5s] scale-0 [&.Open]:!scale-[1] !flex
-                                items-start flex-col gap-[.1em] collapse  hover:cursor-pointer" >
+                            <div class="parent w-full flex justify-start relative" id="collapseOne" >
+                                <div class="absolute left-0 z-40 DropDowns w-full
+                                 justify-start  duration-[.5s] scale-0 [&.Open]:!scale-[1] !flex
+                                items-start flex-col  collapse  hover:cursor-pointer" >
                                    <div class="Drop-Item w-full flex justify-between items-center group hover:bg-white duration-[.5s]
                                    py-[1em] bg-lightGray">
                                        <span class="TXT w-auto mr-[1em] font-IRANYekan300 group-hover:text-black duration-[.5s]
@@ -378,9 +379,9 @@
                                     </span>
                                    </div>
                                   
-                                   <div class="parent w-full flex justify-start" id="SubcollapseOne" >
+                                   <div class="parent w-full flex justify-start relative" id="SubcollapseOne" >
                                     <div class="DropDowns w-full justify-start duration-[.5s]
-                                     scale-0 [&.Open]:!scale-[1] !flex
+                                     scale-0 [&.Open]:!scale-[1] !flex absolute left-0 z-40
                                     items-start flex-col gap-[.1em] collapse  hover:cursor-pointer" >
                                     <div class="Drop-Item w-full flex justify-between items-center
                                      group hover:bg-white duration-[.5s]
@@ -417,7 +418,7 @@
                                     </span>
                                    </div>
                                   
-                                   <div class="parent w-full flex justify-start" id="SubcollapseOne11" >
+                                   <div class="parent w-full flex justify-start relative" id="SubcollapseOne11" >
                                     <div class="DropDowns w-full justify-start duration-[.5s]
                                      scale-0 [&.Open]:!scale-[1] !flex
                                     items-start flex-col gap-[.1em] collapse  hover:cursor-pointer" >
@@ -436,7 +437,7 @@
                                     </div>
                                    </div>
                                    <div class="Drop-Item w-full flex justify-between items-center group
-                                   hover:bg-white duration-[.5s] subtoggle
+                                   hover:bg-white duration-[.5s] subtoggle 
                                    py-[1em] bg-lightGray" data-bs-toggle="collapse" 
                                    data-bs-target="#SubcollapseOne112" 
                                    aria-expanded="true"  data-parent="#accordion"
@@ -456,9 +457,9 @@
                                     </span>
                                    </div>
                                   
-                                   <div class="parent w-full flex justify-start" id="SubcollapseOne112" >
+                                   <div class="parent w-full flex justify-start relative" id="SubcollapseOne112" >
                                     <div class="DropDowns w-full justify-start duration-[.5s]
-                                     scale-0 [&.Open]:!scale-[1] !flex
+                                     scale-0 [&.Open]:!scale-[1] !flex absolute left-0 z-40
                                     items-start flex-col gap-[.1em] collapse  hover:cursor-pointer" >
                                     <div class="Drop-Item w-full flex justify-between items-center
                                      group hover:bg-white duration-[.5s]
@@ -502,9 +503,9 @@
                         </div>
 
 
-                        <div class="parent w-full flex justify-start" id="collapseTwo" >
-                            <div class="DropDowns w-full justify-start  duration-[.5s] scale-0 [&.Open]:!scale-[1] !flex
-                            items-start flex-col gap-[.1em] collapse  hover:cursor-pointer" >
+                        <div class="parent w-full flex justify-start relative" id="collapseTwo" >
+                            <div class="DropDowns w-full justify-start absolute left-0 z-40  duration-[.5s] scale-0 [&.Open]:!scale-[1] !flex
+                            items-start flex-col  collapse  hover:cursor-pointer" >
                                <div class="Drop-Item w-full flex justify-between items-center group hover:bg-white duration-[.5s]
                                py-[1em] bg-lightGray">
                                    <span class="TXT w-auto mr-[1em] font-IRANYekan300 group-hover:text-black duration-[.5s]
@@ -542,8 +543,8 @@
                                 </span>
                                </div>
                               
-                               <div class="parentSub w-full flex justify-start" id="SubcollapseTwo11" >
-                                <div class="DropDowns w-full justify-start  duration-[.5s] scale-0 [&.Open]:!scale-[1] !flex
+                               <div class="parentSub w-full flex justify-start relative" id="SubcollapseTwo11" >
+                                <div class="DropDowns absolute left-0 z-40 w-full justify-start  duration-[.5s] scale-0 [&.Open]:!scale-[1] !flex
                                 items-start flex-col gap-[.1em] collapse  hover:cursor-pointer" >
                                 <div class="Drop-Item w-full flex justify-between items-center group hover:bg-white duration-[.5s]
                                 py-[1em] bg-lightGray">
@@ -566,94 +567,6 @@
                 </div>
                 <div class="ProductLists w-full flex flex-col gap-[1.8em]
                  justify-start items-center mb-[2em]">
-                    <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
-                     rounded-bl-[72px] px-[.8em] py-[.8em]">
-                     <a href="" class="w-full flex flex-col">
-                        <div class="IMG w-full flex justify-center items-center">
-                            <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
-                        </div>
-                        <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
-                        before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
-                         flex justify-center items-center relative">
-                            <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
-                            text-base leading-27.64 text-black1 text-center">
-                                لیفت پروژکتور نوع ۱ الف
-                            </h3>
-                        </div>
-                        <div class="Text w-full flex justify-center items-center flex-col">
-                            <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
-                                توضیحات این محصول که باید اینجا نوشته شود.
-                            </p>
-                        </div>
-                     </a>
-                      
-                    </div>
-                    <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
-                    rounded-bl-[72px] px-[.8em] py-[.8em]">
-                    <a href="" class="w-full flex flex-col">
-                       <div class="IMG w-full flex justify-center items-center">
-                           <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
-                       </div>
-                       <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
-                       before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
-                        flex justify-center items-center relative">
-                           <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
-                           text-base leading-27.64 text-black1 text-center">
-                               لیفت پروژکتور نوع ۱ الف
-                           </h3>
-                       </div>
-                       <div class="Text w-full flex justify-center items-center flex-col">
-                           <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
-                               توضیحات این محصول که باید اینجا نوشته شود.
-                           </p>
-                       </div>
-                    </a>
-                     
-                   </div>
-                   <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
-                   rounded-bl-[72px] px-[.8em] py-[.8em]">
-                   <a href="" class="w-full flex flex-col">
-                      <div class="IMG w-full flex justify-center items-center">
-                          <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
-                      </div>
-                      <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
-                      before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
-                       flex justify-center items-center relative">
-                          <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
-                          text-base leading-27.64 text-black1 text-center">
-                              لیفت پروژکتور نوع ۱ الف
-                          </h3>
-                      </div>
-                      <div class="Text w-full flex justify-center items-center flex-col">
-                          <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
-                              توضیحات این محصول که باید اینجا نوشته شود.
-                          </p>
-                      </div>
-                   </a>
-                    
-                  </div>
-                  <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
-                  rounded-bl-[72px] px-[.8em] py-[.8em]">
-                  <a href="" class="w-full flex flex-col">
-                     <div class="IMG w-full flex justify-center items-center">
-                         <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
-                     </div>
-                     <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
-                     before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
-                      flex justify-center items-center relative">
-                         <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
-                         text-base leading-27.64 text-black1 text-center">
-                             لیفت پروژکتور نوع ۱ الف
-                         </h3>
-                     </div>
-                     <div class="Text w-full flex justify-center items-center flex-col">
-                         <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
-                             توضیحات این محصول که باید اینجا نوشته شود.
-                         </p>
-                     </div>
-                  </a>
-                   
-                 </div>
                  <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
                  rounded-bl-[72px] px-[.8em] py-[.8em]">
                  <a href="" class="w-full flex flex-col">
@@ -662,13 +575,13 @@
                     </div>
                     <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
                     before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
-                     flex justify-center items-center relative">
+                     flex justify-start items-center relative">
                         <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
                         text-base leading-27.64 text-black1 text-center">
                             لیفت پروژکتور نوع ۱ الف
                         </h3>
                     </div>
-                    <div class="Text w-full flex justify-center items-center flex-col">
+                    <div class="Text w-full flex justify-start items-start flex-col">
                         <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
                             توضیحات این محصول که باید اینجا نوشته شود.
                         </p>
@@ -676,6 +589,72 @@
                  </a>
                   
                 </div>
+                <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
+                rounded-bl-[72px] px-[.8em] py-[.8em]">
+                <a href="" class="w-full flex flex-col">
+                   <div class="IMG w-full flex justify-center items-center">
+                       <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
+                   </div>
+                   <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
+                   before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
+                    flex justify-start items-center relative">
+                       <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
+                       text-base leading-27.64 text-black1 text-center">
+                           لیفت پروژکتور نوع ۱ الف
+                       </h3>
+                   </div>
+                   <div class="Text w-full flex justify-start items-start flex-col">
+                       <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
+                           توضیحات این محصول که باید اینجا نوشته شود.
+                       </p>
+                   </div>
+                </a>
+                 
+               </div>
+               <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
+               rounded-bl-[72px] px-[.8em] py-[.8em]">
+               <a href="" class="w-full flex flex-col">
+                  <div class="IMG w-full flex justify-center items-center">
+                      <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
+                  </div>
+                  <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
+                  before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
+                   flex justify-start items-center relative">
+                      <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
+                      text-base leading-27.64 text-black1 text-center">
+                          لیفت پروژکتور نوع ۱ الف
+                      </h3>
+                  </div>
+                  <div class="Text w-full flex justify-start items-start flex-col">
+                      <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
+                          توضیحات این محصول که باید اینجا نوشته شود.
+                      </p>
+                  </div>
+               </a>
+                
+              </div>
+              <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
+              rounded-bl-[72px] px-[.8em] py-[.8em]">
+              <a href="" class="w-full flex flex-col">
+                 <div class="IMG w-full flex justify-center items-center">
+                     <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
+                 </div>
+                 <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
+                 before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
+                  flex justify-start items-center relative">
+                     <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
+                     text-base leading-27.64 text-black1 text-center">
+                         لیفت پروژکتور نوع ۱ الف
+                     </h3>
+                 </div>
+                 <div class="Text w-full flex justify-start items-start flex-col">
+                     <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
+                         توضیحات این محصول که باید اینجا نوشته شود.
+                     </p>
+                 </div>
+              </a>
+               
+             </div>
                     
                     
                 </div>
