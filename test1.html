@@ -1,379 +1,523 @@
-<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="1408927" > 
-    <member name="about-video" type="list" format="3"/> 
-</basis>
-<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="1408370">
-    <member name="aboutus" type="view"/> 
-</basis>
-<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="1408370">
-     <member name="aboutus1" type="view" postsql="select * from [db.aboutus1] where TypeID=250"/> 
-</basis>	
-<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="1408370" >
-     <member name="sec2" type="list" format="4"/> 
-</basis>
-<basis core="dbsource" name="db" source="basiscore" lid="1" mid="1" usedforid="2359847">
-     <member name="history" type="view" postsql="select * from [db.history] where TypeID=250"  /> 
-</basis>	
-<basis core="dbsource" name="db" source="media" lid="1" sourcemid="1" usedforid="2359847" > 
-<member name="aboutGallery" type="list" format="4"/> 
+<basis core="dbsource" name="db"  source="media" lid="1" sourcemid="1" usedforid="2361929">
+    <member name="ResImage" type="list" format="4"/>
 </basis>
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>درباره ما</title>
-    <meta name="description" content="درباره ما">
-    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/swiper.css">
-    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/outputMobile.css">
-    <link rel="stylesheet" href="[##cms.cms.cdn##]/new/css/mobile-f-style.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گواهی‌نامه‌ها</title>
+    <meta name="description" content="گواهی‌نامه‌ها">
+    <link rel="stylesheet" href="/css/swiper.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        .Certificate .IMG a{
+            width: 100%;
+            height: 100%;
+        }
+        .btn.download{
+            opacity: 0;
+            pointer-events: none;
+        }
+       .btn.fullscreen{
+        transform: translateX(-24px);
+       }
+    </style>
 </head>
-<body dir="rtl" class="bg-b4"> 
-    <main class="aboutUSMobile overflow-hidden">
-        <basis core="call" file="header-mobile.inc" pageindex="[##cms.cms.pageindex##]" />
-        <div class="Container relative w-full flex z-0 justify-center items-start flex-col">
-           <div class="Section-1 sec w-full flex justify-center items-end h-[100vh] mt-auto mb-[3em]">
-            <basis core="print" datamembername="db.about-video">
-                <layout>
-                    @child
-                </layout>
-                <face filter="ord=1000">
+<body>
 
-                <div class="VideoBox group  w-full flex justify-center items-center h-full">
-                    <div class="Video w-full h-full flex justify-center items-center relative hover:cursor-pointer
-                    overflow-hidden flex-col duration-[.5s]">
-                        <video class="w-full h-full object-cover" src="@largeIMG"
-                        ></video>
-                        <div class="ov w-full h-full absolute flex justify-center items-center
-                        top-0 left-0 z-3 group-[&.toggle]:opacity-0 group-[&.toggle]:left-[-100%] duration-[.5s]">
-                            <div class="playbtn mt-[10em]">
-                                <svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_70_1983)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9994 0.109985C53.5664 0.109985 64.0394 4.79898 71.6204 12.38C79.2004 19.96 83.8894 30.433 83.8894 42C83.8894 53.567 79.2004 64.04 71.6204 71.621C64.0394 79.201 53.5664 83.89 41.9994 83.89C30.4324 83.89 19.9594 79.201 12.3784 71.621C4.79837 64.04 0.109375 53.567 0.109375 42C0.109375 30.433 4.79837 19.96 12.3794 12.379C19.9594 4.79898 30.4324 0.109985 41.9994 0.109985ZM61.3534 43.734C61.6574 43.565 61.9204 43.313 62.1064 42.99C62.6534 42.039 62.3254 40.825 61.3744 40.278L46.9784 31.966L32.7484 23.75C32.4224 23.518 32.0234 23.382 31.5934 23.382C30.4914 23.382 29.5984 24.275 29.5984 25.377V42V58.623H29.6064C29.6064 58.959 29.6914 59.3 29.8704 59.613C30.4174 60.564 31.6314 60.892 32.5824 60.345L46.9784 52.033L61.3534 43.734Z" fill="white"/>
-                                    </g>
+    <main class="Swiper-cerificate">
+        <div class="wrapper container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <header class=" Wrapp HorizontalHeader">
+                        <div class="Top">
+                            <div class="Toggle">
+                                <span class="Item"></span>
+                                <span class="Item"></span>
+                                <span class="Item"></span>
+                            </div>
+                            <div class="Logo">
+                                <a href="/"  alt="Ghiran" title="Ghiran">
+                                    <img src="[##cms.cms.cdn##]/images/logo-3.png" alt="Ghiran" title="Ghiran">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="Bottom">
+                            <span>
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <rect x="35" y="35" width="30" height="30" transform="rotate(180 35 35)" fill="url(#pattern0_30_15)"/>
+                                    <circle cx="20" cy="20" r="19.75" stroke="#A4A4A4" stroke-width="0.5"/>
                                     <defs>
-                                    <clipPath id="clip0_70_1983">
-                                    <rect width="84" height="84" fill="white"/>
-                                    </clipPath>
+                                    <pattern id="pattern0_30_15" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_30_15" transform="scale(0.0104167)"/>
+                                    </pattern>
+                                    <image id="image0_30_15" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABX5JREFUeF7tnE9oHFUcx99vxg1LIkFbogQNEiVKkFYLVlIItYfqyWsO0oPHQJAk83ubXbAe9iB62PmTLPSQmwfxkBy9KSKtaERU2ipBig1SYpWokSrBJLuzT54kUEJ2dmeZNz9/8PY8+/vO+3zeb2f3zZsFYV+kBIA03YYLK4B4ElgBVgAxAeJ42wFWADEB4njbAVYAMQHieNsBVgAxAeJ42wFWADEB4njbAVYAMQHieNsBVgAxAeJ42wFWADEB4niWHRCG4SmlFAohXtD8AOAbIUSAiN8R80wdz05ArVa76Lruh0KI4pHR7rqu++rc3NwnqSkQvoGVAKWUE0XRj0KI0eOYAcDt+fn5pwGgRcg0VTQrAYuLi6dbrdaNpBHGcXxqYWHh+1QUCA9mJcD3/Zcdx/koiVer1XqlVCp9TMg0VTQrAQef/4lwXde9yOk6wE3ABdd1P+0wxS4g4tVU05DwYFYCfN+fdBznsyReADDped7nhExTRbMSEEXROaXUF0kjVEqdk1J+mYoC4cGsBPi+f9ZxnK868DqLiF8TMk0VzUpAEARnAODbpBE2m80z5XL5eioKhAezEqCXIIQQN+3vAKIZE0XRuFJqvcPvgPFSqfQD0SmmjmXVAUtLS2NxHN/qMMoxRNTLFSxerATUarVR13U3OnwNHfU87ycW9PVKLpcT1ecZBMEIANxJOudGozFSqVQ2uYyLlYAoioaVUnc7fAsaLpfLv1oBBgjU6/WhZrO51eEiPFQqlX43EG+kJKsOCMPwhBDijyQSxWLxxMzMzJ9GaBkoykpAvV4fbDab9zpcAwYrlcrfBlgZKclKwPLycv/Ozs5OBxL9iPiPEVoGirISsLKy0re5ubmXxGFgYKBvenq6YYCVkZKsBBzcE46TSHie5wCAMkLLQFFWAg5+C8QA4LRhESPiAwY4GSvJUcAeAPQdR0QptSelPLpdxRi8LAqzExCGob4I97cRsCOlfDALMHnV4ChAfw0dbAPoHiI+lBe8LHLYCQiCYBsAHm4z+G1EPJkFmLxqcBSwBQBDbT6CtqSUj+YFL4scdgLCMNSLccNtBNyVUj6WBZi8anAUoJejR9oAuoOIT+QFL4scjgL0DZljN+cKITYQ8akswORVg6MAfUtyrA2gW4j4TF7wsshhJyAIgnUAGG9zDViXUj6bBZi8arATEIah3pait6cc97qJiM/lBS+LHHYCgiC4CgDn23TANSnlS1mAyasGOwG+719xHGemjYArUso38oKXRQ47AWEYviiE0Bt03SMA9DL1BKd9ofr82QnQJ+37/muO40RCiMNfvb8IIeYRcSWLWZlnDZYCNKCpqSl3cnLyyTiOled5G5wezLtfMFsBec5Sk1lWgEm6XdS2ArqAZPIQK8Ak3S5qWwFdQDJ5iBVgkm4Xta2ALiCZPIStgGq1WiwWi/+t/e/u7t6uVqu7JkGZqs1OgN6gu7+//y4AvA4AAxqMUkpvVXmvUCi8OTs7+5cpWCbqshKg4TcajWsAcOySs1LqRqFQOM9JAisBQRBEADCfNBOVUotSSs/EbDVRk40AvfYzMTHxW8KeoEM+22tra4+srq4mbuI1AbOXmmwEhGGot5t0+/Dd44j4cy9A8n4PJwEdH0+6D95JRNzOG2YveWwE6MEl3ZA/HLx+kp7TjXlWAqIouqSUer/DTLuEiB/0Mhsp3sNKgAYURdHbSqnLR2Ep/fiM47zjed5bFCB7zWQnQA9U/3MWAEwLIZ4/eBzpOgAsc/qnrENhLAX0Otv+j++zAoitWAFWADEB4njbAVYAMQHieNsBVgAxAeJ42wFWADEB4njbAVYAMQHieNsBVgAxAeJ42wFWADEB4njbAVYAMQHieNsBxAL+BaCXh3BqgrnlAAAAAElFTkSuQmCC"/>
                                     </defs>
                                     </svg>
                                     
-                            </div>
+                            </span>
                         </div>
-                     
-                    </div>
-                </div>
-                </face>
-            </basis>
-
-           </div>
-           <div class="Section-2 w-full flex justify-center items-center mb-[2em] flex-col gap-[3em]">
-                <div class="AboutUS-c sec w-[100%] flex justify-start items-center 
-                flex-col ml-auto mr-auto relative">
-                <basis core="print" datamembername="db.sec2">
-                    <layout>
-                        @child
-                    </layout>
-                    <face filter="ord=50">
-                        <div class="IMG w-auto flex justify-center items-center">
-                            <img src="@largeIMG" alt="makesh-dahesh" title="makesh-dahesh" class="w-auto object-contain">
-                        </div>
-                    </face>
-                </basis>
-                    <div class="Box w-[80%] flex justify-start shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)]
-                    items-center flex-col bg-[#FFFFFFCC] 
-                 left-0  translate-y-[-8%]">
-                 <basis core="print" datamembername="db.aboutus">
-                    <layout>
-                        @child
-                    </layout>
-                    <face filter="TypeID=150">
-                        <div class="Title w-full flex justify-center items-center pt-[18px] pb-[18px]">
-                            <h1 class="text-base font-medium font-IRANSansWeb500 leading-25.04 text-b7
-                            fade-in [&.fade-in]:opacity-0 duration-[.8s]
-                                [&.fade-in]:translate-y-[100%]">
-                                @Answer
-                            </h1>
-                        </div>
-                    </face>
-                 </basis>
-                        <div class="Text fadeIN w-[80%] flex justify-start items-start flex-col ml-auto mr-auto">
-                            <basis core="print" datamembername="db.aboutus">
-                                <layout>
-                                    @child
-                                </layout>
-                                <face filter="TypeID=129">
-                            <p class="text-sm font-IRANSansWeb300 leading-21.91 font-light text-b9
-                            fade-in [&.fade-in]:opacity-0 duration-[.8s]
-                                [&.fade-in]:translate-y-[100%] text-justify"> 
-                                @Answer
-                            </p>
-                                </face>
-                            </basis>
-                        </div>
-                    </div>
-                </div>
-                <div class="HistoryContainer sec w-full flex justify-center items-center flex-col gap-[1em]">
-            
-                    <div class="historyTitle fadeIN w-[80%] mr-auto ml-auto flex justify-between items-center  mb-3">
-                        <span>
-                            <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
-                                <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
-                                </svg>
-                                
-                        </span>
-                        <h3 class="font-IRANSansWeb700 text-base leading-25.04 font-bold text-b12">
-                            تاریخچه شرکت
-                        </h3>
-                        <span>
-                            <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
-                                <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
-                                </svg>
-                                
-                        </span>
-        
-                    </div>
-                    <div class="history-Tabs w-[90%] mt-[1em] mr-auto ml-auto flex justify-center 
-                    flex-col items-center gap-[.8em]">
-                    <basis core="print" datamembername="db.history">
-                        <layout>
-                            @child
-                        </layout>
-                        <face>
-                        <div class="history-Tab fade-in [&.fade-in]:opacity-0 duration-[.8s]
-                        [&.fade-in]:translate-y-[100%] w-full flex justify-center items-center  
-                        shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]">
-                            <div class="Tab w-full flex justify-start items-start flex-col gap-[2em]">
-                                <div class="tab-title pt-[20px] pb-[20px] w-full flex justify-between items-center
-                               duration-[.5s] group ">
-                                    <p class="faNum text-xl font-medium font-IRANSansWebfanum400 duration-[.5s]
-                                    leading-23 text-b9 mr-[10px]">
-                                    @text	
-                                    </p>
-                                    <div class="Icon ml-[10px] flex justify-center items-center">
-                                        <svg width="35" class=" duration-[.5s]" 
-                                        height="19" viewBox="0 0 35 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 1L17.5 17.5L34 1" stroke="#2E3192" class=" duration-[.5s]"/>
+                        <div class="Menu-Container">
+                            <div class="Top">
+                               
+                                <div class="Right">
+                                    <span class="Icon close">
+                                        <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.3109 1.99217L18.4355 6.50582L14.3109 11.0195C13.8964 11.4732 13.8964 12.206 14.3109 12.6597C14.7255 13.1134 15.3952 13.1134 15.8098 12.6597L20.6891 7.32013C21.1036 6.86644 21.1036 6.13356 20.6891 5.67987L15.8098 0.340268C15.3952 -0.113423 14.7255 -0.113423 14.3109 0.340268C13.907 0.793959 13.8964 1.53848 14.3109 1.99217Z" fill="#343434"/>
+                                            <path d="M2 5C1.30964 5 0.75 5.55964 0.75 6.25C0.75 6.94036 1.30964 7.5 2 7.5L2 5ZM2 7.5L19 7.5L19 5L2 5L2 7.5Z" fill="#343434"/>
                                             </svg>
                                             
-                                    </div>
+                                    </span>
+                                    <!-- <span class="Icon language">
+                                        <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect x="0.488281" width="20.5556" height="20.5556" fill="url(#pattern0_2_1020)"/>
+                                            <defs>
+                                            <pattern id="pattern0_2_1020" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_1020" transform="scale(0.015625)"/>
+                                            </pattern>
+                                            <image id="image0_2_1020" width="64" height="64" xlink:href="data:image/png;base64,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"/>
+                                            </defs>
+                                            </svg>
+                                            <div class="DropDwonLang">
+                                                <span class="Item">
+                                                    <a href="">EN</a>
+                                                </span>
+                                            </div>   
+                                    </span> -->
+                                  
+                                    <span class="Icon SearchIcon">
+                                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <rect width="22.2" height="22.2" fill="url(#pattern0_2_1021)"/>
+                                            <defs>
+                                            <pattern id="pattern0_2_1021" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                            <use xlink:href="#image0_2_1021" transform="scale(0.0111111)"/>
+                                            </pattern>
+                                            <image id="image0_2_1021" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+                                            </defs>
+                                            </svg>
+                                            
+                                    </span>
+                                
                                 </div>
-                            
-                                <div class="DropDowns w-full flex justify-start items-start
-                                pb-[20px] flex-col ">
-                                    <div class="Text w-[90%]  mr-auto ml-auto flex justify-start items-start flex-col">
-                                        <p class="text-sm font-IRANSansWeb300 leading-21.91 font-light text-b9 text-justify">
-                                             @largetext</p>
+                                <div class="Left">
+                                    <div class="Logo">
+                                        <a href="/"  alt="Ghiran" title="Ghiran">
+                                            <img src="/images/logo-2.png"  alt="Ghiran" title="Ghiran">
+                                        </a>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="Middle">
+                                <ul>
+                                    <li class="Menu-Item" >   
+                                        <div class="text">
+                                       <a href="/" class="Menu-Link" data-index="0" alt="صفحه نخست" title="صفحه نخست">
+                                         
+                                           
+                                                   صفحه نخست
+                                               </a>
+                                            </div>
+                                             
+                                   </li>
+                                    <li class="Menu-Item" >   
+                                         <div class="text">
+                                        <a href="محصولات" class="Menu-Link" data-index="0" alt="محصولات" title="محصولات">
+                                          
+                                            
+                                                    محصولات
+                                                </a>
+                                             </div>
+                                                <!-- <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 7.4L0 1.4L1.4 0L6 4.6L10.6 0L12 1.4L6 7.4Z" fill="#1C1B1F"/>
+                                                    </svg>
+                                                     -->
+                                        
+                                       
+                                        <!-- <div class="dropmenu">
+                                            <span class="drop-item">
+                                            
+                                                <a href="" alt="Ghiran" title="Ghiran">
+                                                    مورد 1
+                                                </a>
+                                            </span>
+                                        
+                                          </div> -->
+                                    </li>
+                                    <li class="Menu-Item" >
+                                       
+                                          
+                                                <div class="text"> 
+                                                    <a href="درباره-ما" class="Menu-Link" data-index="1" alt=" درباره ما"
+                                                     title=" درباره ما">
+                                                    درباره ما
+                                                    </a>
+                                                    <svg class="click" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 7.4L0 1.4L1.4 0L6 4.6L10.6 0L12 1.4L6 7.4Z" fill="#1C1B1F"/>
+                                                        </svg>
+                                                </div>
+                                               
+                                                    
+                                        
+                                    
+                                        <div class="dropmenu">
+                                            <span class="drop-item">
+                                            
+                                                <a href="گواهی-نامه-ها" alt=" گواهی نامه ها" title=" گواهی نامه ها">
+                                                گواهی نامه ها
+                                                </a>
+                                            </span>
+                                            <span class="cat-item">
+                                                <a href="درباره-ما#masoliat" alt="     مسئولیت های اجتماعی" title="     مسئولیت های اجتماعی">
+                                                 مسئولیت های اجتماعی
+                                                </a>
+                                            </span>
+                                         
+                                          </div>
+                                    </li>
+                                    <li class="Menu-Item">
+                                     
+                                                <div class="text">
+                                                    <a href="#" class="Menu-Link"  data-index="2" alt="خدمات" title="خدمات">
+                                          
+                                                    خدمات
+                                              
+                                        </a> 
+                                                <svg class="click" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 7.4L0 1.4L1.4 0L6 4.6L10.6 0L12 1.4L6 7.4Z" fill="#1C1B1F"/>
+                                                    </svg>
+                                                  </div>   
+                                        
+                                        <div class="dropmenu">
+                                            <span class="drop-item">
+                                            
+                                                <a href="/آزمایشگاه" alt="آزمایشگاه" title="آزمایشگاه">
+                                                   آزمایشگاه
+                                                </a>
+                                            </span>
+                                            <span class="cat-item">
+                                                <a  href="/حمل-و-نقل" alt=" حمل و نقل" title=" حمل و نقل">
+                                                   حمل و نقل
+                                                </a>
+                                            </span>
+                                          
+                                          </div>
+                                    </li>
+                                    <li class="Menu-Item" >
+                                      
+                                          
+                                                <div class="text"> 
+                                                     <a href="اخبار" class="Menu-Link " data-index="3" alt="اخبار" title="اخبار">
+                                                    اخبار
+                                                   </a> 
+                                                <svg class="click" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 7.4L0 1.4L1.4 0L6 4.6L10.6 0L12 1.4L6 7.4Z" fill="#1C1B1F"/>
+                                                    </svg>
+                                                    </div>
+                                        
+                                    
+                                        <div class="dropmenu">
+                                            <span class="drop-item">
+                                            
+                                                <a href="/اخبار" alt="اخبار" title="اخبار">
+                                                   اخبار
+                                                </a>
+                                            </span>
+                                            <span class="cat-item">
+                                                <a href="ویدیو" alt="ویدیوها" title="ویدیوها">
+                                                  ویدیوها
+                                                </a>
+                                            </span>
+                                          </div>
+                                    </li>
+                                    <basis core="dbsource" name="db" source="basiscore" lid="1" mid="5" usedforid="9616">
+                                        <member name="contactus1" type="view" postsql="select * from [db.contactus1] where TypeID=240"/>
+                                    </basis>
+                                    <li class="Menu-Item" >
+                                      
+                                          
+                                                <div class="text">
+                                                      <a href="تماس-با-ما" class="Menu-Link" data-index="4" 
+                                                      alt="تماس باما" title="تماس باما">
+                                                    تماس باما
+                                               </a>   
+                                                <svg class="click"  width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M6 7.4L0 1.4L1.4 0L6 4.6L10.6 0L12 1.4L6 7.4Z" fill="#1C1B1F"/>
+                                                    </svg>
+                                                    
+                                         </div>
+                                     
+                                        <div class="dropmenu">
+                                            <basis core="print" datamembername="db.contactus1">
+                                                <layout>
+                                                    @child
+                                                </layout>
+                        
+                                                <face>
+                                                    <span class="drop-item">
+                                            
+                                                        <a href="tel:021@Answer" alt="تماس باما" title="تماس باما">
+                                                           021@Answer
+                                                        </a>
+                                                    </span>
+
+                                                </face>
+                                            </basis>
+                                      
+                                            <!-- <span class="cat-item">
+                                                <a href="#" alt="Ghiran" title="Ghiran">
+                                                 اسکن بارکد
+                                                </a>
+                                            </span> -->
+                                       
+                                          </div>
+                                    </li>
+                                    <li class="Menu-Item" >                                                                
+                                        <div class="text"> 
+                                                <a href="استعلام-نتایج-آزمون " class="Menu-Link">
+                                                   استعلام نتایج آزمون
+                                                </a>
+                                           </li>
+                                </ul>
+                            </div>
+                            <div class="Bottom">
+                                <div class="Socials">
+                                    <span class="Social-Item">
+                                        <a href="#">
+                                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <rect width="29" height="29" fill="url(#pattern0_2_1025)"/>
+                                                <defs>
+                                                <pattern id="pattern0_2_1025" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0_2_1025" transform="scale(0.0104167)"/>
+                                                </pattern>
+                                                <image id="image0_2_1025" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAFXElEQVR4nO1dMW8cRRQeMAQJiUgE0pBE0EOdQOWGwgnWyfa+b8/2tchYiQkliRtXsdMnUYicEpQoSkQRMAU/AFIThKGMUwU7hQOSHWwNerqxiMzd7vh2ZnZ2933Sk053uzvz3rc7O/Pem3dKCQQCgUAgEAgEAoFAIBAIBA4BYAjARwDmAdwD8CsRPSWi5wB0mcJ94L4AeGj6Np+m6YcLCwsvV/4maLfbJ4joMoDHZRsaB5c1AEvj4+PHVdUA4CiAGwC2IzCkLijbRHR9amrqbVUFAJgGsBGB4bRjWSeiSRUrZmZmXgWwHIGhtGf5inVVMWF0dPR1ACsRGEeHECL6nnVWEd35jTE+/iPhRwCHYhjzmzDs6D4kXC/V+ETUqalhH6VpmrRarTdY0jQdA7Da5/h2mVPNjToaH8CR/fpOT0+/aX7bf/yfY2Njb5VBwI0YDAb3Qhk6U59zrgVf4dZkkaX3S6fTOdxPbx6O+py3FXTFbNwLumkEdDqdwxnnLoV0rFXRt6MtZbyf7kmSTGSctxbEgWe8mrquQkS/93oJ83fmt77nJklyKgQB8zEYCn5ljYjAQ44ZdlLjHc0j72IIAu6VcFfuEtFPRHSJh4EkSd7naSGvwln4M3/Hv/Ex5tjdEvp5NwQBDwMq9AjAlwCOHbSfPCsBcMHmznXY31+UbwRafD0hos9c+Fr4GgBmecEUoN/rbqycrZDv+f83vV6CRcGrVQC3PPd9W/mG59jsp777z0+Wz1i0Uuolrwp46vjfSZKcVoGQpukZblMIQPfOD2n8F0j42MdwWrkngAIMOxm6zDadgK8HcALOAfgBwG9E9BcLfzbfzfExB9TndlMJWLdN9eB1gHF//2PxRPEC7E673X7P8tpHXE5Rq0TAjGV7LQCbA1yfz2nZtEFEZxtFgFnhHrIwzOdFXArm3PN57YyMjLzmysNbCQLYvWDRTsuFP8dcI/dJYEdaUwjYyfPtoDvmDzLs9JPNycnJdyzyWHdrTwB7Ki3auOnQ+HuybNHuz00g4JLFVHPHAwE7eVNUDivWnoCskN/ei9eD8fdkTmWAc4FqTwAHTnKuv+KRgJWsttM0/aD2BOS5mgH84YsAjulauKxrT0Dm/B/AM49PwDOL4E3jCdgUAkocgign9aOgrKqmD0HyEi4I39NQdN3Nvp6Ac6rp01AAi1nXb8tCLApXxHJJrogHtX8C2OGVl8oNccb5I8DIBQuiW+KO9kfAmk1ABsB5BwGZL/LaaWJAhmU2lpCky5lXlQjYsA3KczDloEH5iYmJd22uzYuvpgblNedqFkhLWX0hLWW1QFrKHZc6VY0AzbmaXjucrcs51/pUjgAAO7wR2mune+vxic2Q1gQCNCfKcsKsCoQkSUYlOff/Q9Fz25mRg2HH+Z0f8gnwvUHjto/qVKa0gtMXblkbNDYCVac6ywukov01i6y5UP1WddqkB+AxZ6wNUgbAJFpdDLmpPNQmvVK2qaKbNLXIPnvOXti/TZW/M/58zu15UOdtqk3YqK19ORkLg4uaRqCojlROeieAC1L0KlwkAn7XDKkQcJFDWUNZVKFgygDUsmATBpOtQcopFAJXDIxAcR2JXFGh4XpzG6or1psNnYNrKUdgAF2mcF0hVSa4lnKDjX+1VOMbAoaI6NuyjYHw8t3w8PArKgZwIWsuaB2BUXQguR9N8e49sE+mCTMjIroazZ3fC1xLuaazoyelv3BtYfLsr5kFiq64bPE830cVL+8wOZ5LIQvnwZEYf9di8BWuLwceFzXlAAn7zDlwEdvfWFG3T3dNpcWTtfgbK4FAIBAIBAKBQCAQCAQCgYoJ/wItoMvxvihsXgAAAABJRU5ErkJggg=="/>
+                                                </defs>
+                                                </svg>
+                                                
+                                        </a>
+                                    </span>
+                                    <span class="Social-Item">
+                                        <a href="#">
+                                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <rect width="28" height="28" fill="url(#pattern0_2_1026)"/>
+                                                <defs>
+                                                <pattern id="pattern0_2_1026" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0_2_1026" transform="scale(0.0104167)"/>
+                                                </pattern>
+                                                <image id="image0_2_1026" width="96" height="96" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAAH6klEQVR4nO1deWxURRifiooH3iioiGfiEfCIIdF41CtaTWm7+77f7LYlkhCpRBNRgqIIlngkavxHjSiikQRFQESsF15IQJQgKhIBUVEuq/ECQQQ5WvO50+RRdnfeMa9v93V+yfzVfTPffDPz3TMVwsLCwsLCwsLCwsLCwsLCwsKinADg4Lhp6FZIpVLHAxgNYBGALQDaiegvAB84jpMWQlTETWMiIaW8HMB0ItrJTC/SZg8dOvSguOlNBAD0AjACwHIN0/dqRDQtbtrLGul0+iwATwDY7Ifx7uY4zrVxz6OsAKAHy3CW5QDagjLe1V6Ne05lgVQqdRyAsUS03gDT3a017rmVNKSUFxHRVAA7DDO+o+2Ke44lh6qqqp5EBGVCRsF0tyL+Le75lgwAnArgEQC/G2TwT5q/LxHdHBVSyuuIqIWI9hhiPDteE6WUA4joIc1vXxTdEY2NjYcDaAKwwuBuXw1gTENDw1Ed4wB4V/PN7aI7wXGccwFMIqK/TSlRIpoF4Kp84QWW8ZrvK0XS0dTUdAAACWCBwd3+C4AHU6lUv0LjptPpkzV97OGTKJKKbDbbh0WCYdt9qRJd2uimctiK9bVKJBEALlRiZrshprMPMBPAxX7o6FYKuCpnu98I4EuDu30Nn6D6+vreQWgiorma/keJckcmkzmdiB42aLu3EdH7yhHrEYY2AL8mUgE3NzfvJ6W8RomF3YaUKidLJgE4xwSNAPrrFhrAEaIcbXciWmlQzKwCMHLIkCGHmqQVQEqz4KtFuQDA+QAmA9hmaLdztmq64ziXRUjzAxo6XhalbrsTURbAQoO7vZWImjlf65ceKeUgAPM56+Xl90T0loaW0aIUkc1mTwAwgZllkPELAGR4UQPQ04eInu+IE3Fo2st3ylErSJOU8kpRSmBxQEQzPCSz2z22bUT0rJTyvBDe86hO6cb32NzVfcvesU4B19bWHiniBlcFsO1ORMtM7XYi+p5t97q6umOC0uU4ztUAvs5zinp5/L5WQ+e3Ikm2OxHtMWG7M13KtO08xkKvzGcQ0f0lp4CjsN2REw+TMpnM2WFoq66uPoT1Tr7QBRF97If5JaeA2dmIwHb/gvs0YLtXqFOzrsA4i2pqag4LMOefY1fAjuNcAOA5AP8YYvq/XMgkpbzEYMCuYM6Xd34Q5isrLj4FzBFDw8nsjQDGA+hrsLxksib9+EnQOL2UcrDOSBARoQLAo4aKlbjNZ/HQFMB2zwcAB+YxK/O1xWFiNMqHKbYAM0QUYA8zLNNVmvAZAANN0ialHKzytbrxl4QNkHFyXzPGXcI02Arh3GgIxjNzRpqODkopB7Dz5JGOz0zIZl0ZCluCwjQAPBXQdm/hkhDTtfL19fW9uSzE66Ygos/dlQwh7wQUG6vNxDj7wKeJuZmIHuciKNN0NOXCB00eKhHczF8Wxmt2w3Gc6lgUMICtHif7ml+nxrScj4r5DAD3acacKaIAEf3oY+IblavePwY53+5qy4PmegsBwOuaMe8WUYCIpoSJ31RWVu4fYLJHK1G2K2AWrG8EfOh6BexyvsLY/xvYfs5kMif5sOc3BRxrBTtjEdUgFRu3zaS42wcqZdgesnGQ7g2lzHqYkPPY+9StZEZFMX8p5Q2a8X8QUULtzBcMLEIHs9ar9GG/EHLe3b4Jkor0Mf/xmvnMimrszoQ0qKSIkYVA7lQEdvLU5FdzkCziec/R0HBPlOPnu8hWy3FxgzX37QHbdwBOjHrOuvrT2G5DqvDsGABrY2D+2kwmc0oXzFGngNtNm7xhM2KhRAq8tXVdwXwvCpj9JFFK6IJTsS6KUEchENG4klDAfsEOGIAaAG8arPHc3lU7vwP87oOGrrGi1GHqVBDRvK6mvWQVcBCwtxhSR4zvSnpV6FtH07GinBDS6bq0WN9Syjo+aaZo5XyGTh+JcgOA4QGZv4098iL9jnT5JU+yZWaA1nsT9xiHOta+xRARzS2i7Cfm+f3UsEn/RCjgfOBQdYATMKZA2HpekUVrCfOeW5Girv+bSrmWH4joZr8LIKUc5O4DwBkq9q/7dn6QOqBEKuAQYmizO4TNytjDJTl3W+o3T5BIBewGgA99yP8W13fDuJQxgAhbk06nT/NB31hNf7NFOUM9hNfusd2hqvOKVqZ5aK1eC8PUGxHFNsU4Uc5g+QmPYoiLdlXVRbuB9ge/lBW2GMFxnOtFuYOKWDCunbbT5C0b15s//AJKXrB1pcuDR5X+7FIQ0S2GGbvD529T+ehSofVi324QSUA2l+wwdaOmVV03HeEjU7ebiG7qTBfX+Gi+myOSAuTu54Zl/nJ3MZi6yb7Dx/sRe1U1A3illIKCkQLArSGZ/04+R4tlfMfD2l4aXyzsKCTmMpNiv+UsmUgKsrnL0oHuD6vquYI3J1kk+SzmnaKsM10hmvHKu1gBTdlHHkbxgg332PdAPzfzdRYXlyiKpMFxnCt8MOhPvmztp3/2gE3VM7m98kQBwEse64DODNh/XwBfGViE5CjgPHeOFxeZ+EdhC2D5Bou6nB1mAXy9LVdWqKqq6gngTiL6VF0M2aKuxQ4zkeFy3Zx/OyDz+Tkb++9JDL1XNM2n7N/Duir04BY58Init4I8LgCbpbepTy1MgX0IAI9pQhebiKjR2KAW+4ItKyJ6mt/6Ue9fbFVvlE5InNNlYWFhYWFhYWFhYWFhYWFhYSHiwn+lLsdvbSUz1gAAAABJRU5ErkJggg=="/>
+                                                </defs>
+                                                </svg>
+                                                
+                                        </a>
+                                    </span>
+                                    <span class="Social-Item">
+                                        <a href="#">
+                                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <rect width="25" height="25" fill="url(#pattern0_2_1024)"/>
+                                                <defs>
+                                                <pattern id="pattern0_2_1024" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                <use xlink:href="#image0_2_1024" transform="scale(0.0104167)"/>
+                                                </pattern>
+                                                <image id="image0_2_1024" width="96" height="96" xlink:href="data:image/png;base64,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"/>
+                                                </defs>
+                                                </svg>
+                                                
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="CopyRight">
+                                    <div class="CopyRight">
+                                        <a href="https://www.namasite.ir/" alt="namasite" title="namasite">
+                                        <span class="Namasite"> 
+                                            طراحی سایت و بهینه سازی سایت
+                                        </span>
+                                        <img src="[##cms.cms.cdn##]/images/namasite.png" alt="namasite" title="namasite">
+                                    </a>
                                     </div>
+                        
                                 </div>
                             </div>
                         </div>
-                        </face>
-                    </basis>
-                      
+                        <div class="Search-Container">
+                            <div class="Input-Search">
+                                <form role="search" id="searchform" action="/search.bc" method="get" class="radius-xl">
+                                    <input type="text" class="Searchh" name="q" placeholder="جستجو کنید...">
+                                    <button type="submit">
+                                    <svg  width="27" height="27" viewBox="0 0 27 27" fill="none" 
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <rect width="27" height="27" fill="url(#pattern0_2_1011)"/>
+                                        <defs>
+                                        <pattern id="pattern0_2_1011" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_2_1011" transform="scale(0.0111111)"/>
+                                        </pattern>
+                                        <image id="image0_2_1011" width="90" height="90" xlink:href="data:image/png;base64,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"/>
+                                        </defs>
+                                        </svg>
+                                    </button>
+                                  </form>
+                            </div>
+                           <div class="Close">
+                            <div class="box">
+                                <svg width="40" height="40" viewbox="0 0 40 40">
+                                    <path d="M 10,10 L 30,30 M 30,10 L 10,30" stroke="white" stroke-width="4" /></svg>
+                                </div>
+                           </div>
+                        </div>
+                    </header>
+                    <div class="Banner">
+                        <h1>
+                            گواهی‌نامه‌ها
+                        </h1>
+                        <div class="arrows"></div>
+                    </div>
+                    
+                </div>
+                <basis core="print" datamembername="db.ResImage">
+                    <layout>
+                        @child
+                    </layout>
+                    <face filter="ord=1000">
+                        <div class="swiper-slide swiper-slidep" data-link="@description">
+                            <div class="Certificate">
+                                <div class="IMG">
+
+                               <img src="@largeIMG" alt="@name" title="@name">
+        
+                                </div>
+                                   <div class="Title">
+                                   <p>@name</p>
+                                </div>
+                           </div>
+                        </div> 
+                    </face>
+                </basis>
+                <div class="swiper-slide" >
+                    <div class="footer">
+                        <div class="Top">
+                          <a href="#">
+                          <span class="Circle scrolltoHome">
+                             
+                              <svg width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.125 4L1 4M11.5 7.5L15 4L11.5 0.5" stroke="#232323" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                                
+                          </span>  </a>
+                        </div>
+                        <div class="Bottom">
+                          <div class="Socials">
+                             <span class="SocialItem">
+                              <a href="#">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M11.0286 0C12.1536 0.003 12.7246 0.009 13.2176 0.023L13.4116 0.03C13.6356 0.038 13.8566 0.0479999 14.1236 0.0599999C15.1876 0.11 15.9136 0.278 16.5506 0.525C17.2106 0.779 17.7666 1.123 18.3226 1.678C18.8311 2.1779 19.2245 2.78259 19.4756 3.45C19.7226 4.087 19.8906 4.813 19.9406 5.878C19.9526 6.144 19.9626 6.365 19.9706 6.59L19.9766 6.784C19.9916 7.276 19.9976 7.847 19.9996 8.972L20.0006 9.718V11.028C20.003 11.7574 19.9954 12.4868 19.9776 13.216L19.9716 13.41C19.9636 13.635 19.9536 13.856 19.9416 14.122C19.8916 15.187 19.7216 15.912 19.4756 16.55C19.2253 17.2178 18.8317 17.8226 18.3226 18.322C17.8225 18.8303 17.2179 19.2238 16.5506 19.475C15.9136 19.722 15.1876 19.89 14.1236 19.94C13.8863 19.9512 13.649 19.9612 13.4116 19.97L13.2176 19.976C12.7246 19.99 12.1536 19.997 11.0286 19.999L10.2826 20H8.97358C8.24384 20.0025 7.5141 19.9949 6.78458 19.977L6.59058 19.971C6.35319 19.962 6.11585 19.9517 5.87858 19.94C4.81458 19.89 4.08858 19.722 3.45058 19.475C2.78325 19.2244 2.17879 18.8308 1.67958 18.322C1.17062 17.8223 0.776801 17.2176 0.525577 16.55C0.278577 15.913 0.110577 15.187 0.0605769 14.122C0.0494358 13.8847 0.0394357 13.6474 0.030577 13.41L0.0255771 13.216C0.00714914 12.4868 -0.00118508 11.7574 0.000577001 11.028V8.972C-0.00221397 8.2426 0.00512015 7.5132 0.0225771 6.784L0.029577 6.59C0.037577 6.365 0.047577 6.144 0.059577 5.878C0.109577 4.813 0.277577 4.088 0.524577 3.45C0.775691 2.7819 1.1703 2.17702 1.68058 1.678C2.17967 1.16947 2.78372 0.775987 3.45058 0.525C4.08858 0.278 4.81358 0.11 5.87858 0.0599999C6.14458 0.0479999 6.36658 0.038 6.59058 0.03L6.78458 0.0239999C7.51377 0.00623271 8.24317 -0.0014347 8.97258 0.000999928L11.0286 0ZM10.0006 5C8.67449 5 7.40273 5.52678 6.46504 6.46447C5.52736 7.40215 5.00058 8.67392 5.00058 10C5.00058 11.3261 5.52736 12.5979 6.46504 13.5355C7.40273 14.4732 8.67449 15 10.0006 15C11.3267 15 12.5984 14.4732 13.5361 13.5355C14.4738 12.5979 15.0006 11.3261 15.0006 10C15.0006 8.67392 14.4738 7.40215 13.5361 6.46447C12.5984 5.52678 11.3267 5 10.0006 5ZM10.0006 7C10.3945 6.99993 10.7847 7.07747 11.1487 7.22817C11.5127 7.37887 11.8434 7.5998 12.122 7.87833C12.4007 8.15686 12.6217 8.48754 12.7725 8.85149C12.9233 9.21544 13.001 9.60553 13.0011 9.9995C13.0011 10.3935 12.9236 10.7836 12.7729 11.1476C12.6222 11.5116 12.4013 11.8423 12.1228 12.121C11.8442 12.3996 11.5135 12.6206 11.1496 12.7714C10.7856 12.9223 10.3955 12.9999 10.0016 13C9.20593 13 8.44287 12.6839 7.88026 12.1213C7.31765 11.5587 7.00158 10.7956 7.00158 10C7.00158 9.20435 7.31765 8.44129 7.88026 7.87868C8.44287 7.31607 9.20593 7 10.0016 7M15.2516 3.5C14.9201 3.5 14.6021 3.6317 14.3677 3.86612C14.1333 4.10054 14.0016 4.41848 14.0016 4.75C14.0016 5.08152 14.1333 5.39946 14.3677 5.63388C14.6021 5.8683 14.9201 6 15.2516 6C15.5831 6 15.901 5.8683 16.1355 5.63388C16.3699 5.39946 16.5016 5.08152 16.5016 4.75C16.5016 4.41848 16.3699 4.10054 16.1355 3.86612C15.901 3.6317 15.5831 3.5 15.2516 3.5Z" fill="#A4A4A4"/>
+                                      </svg>
+                                      
+                              </a>
+                             </span>
+                             <span class="SocialItem">
+                              <a href="#">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M10 0.000488281C4.48 0.000488281 0 4.48049 0 10.0005C0 15.5205 4.48 20.0005 10 20.0005C15.52 20.0005 20 15.5205 20 10.0005C20 4.48049 15.52 0.000488281 10 0.000488281ZM14.64 6.80049C14.49 8.38049 13.84 12.2205 13.51 13.9905C13.37 14.7405 13.09 14.9905 12.83 15.0205C12.25 15.0705 11.81 14.6405 11.25 14.2705C10.37 13.6905 9.87 13.3305 9.02 12.7705C8.03 12.1205 8.67 11.7605 9.24 11.1805C9.39 11.0305 11.95 8.70049 12 8.49049C12.0069 8.45868 12.006 8.42566 11.9973 8.39429C11.9886 8.36292 11.9724 8.33416 11.95 8.31049C11.89 8.26049 11.81 8.28049 11.74 8.29049C11.65 8.31049 10.25 9.24049 7.52 11.0805C7.12 11.3505 6.76 11.4905 6.44 11.4805C6.08 11.4705 5.4 11.2805 4.89 11.1105C4.26 10.9105 3.77 10.8005 3.81 10.4505C3.83 10.2705 4.08 10.0905 4.55 9.90049C7.47 8.63049 9.41 7.79049 10.38 7.39049C13.16 6.23049 13.73 6.03049 14.11 6.03049C14.19 6.03049 14.38 6.05049 14.5 6.15049C14.6 6.23049 14.63 6.34049 14.64 6.42049C14.63 6.48049 14.65 6.66049 14.64 6.80049Z" fill="#A4A4A4"/>
+                                      </svg>
+                                      
+                              </a>
+                             </span>
+                             <span class="SocialItem">
+                              <a href="#">
+                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M10 0.000488281C15.523 0.000488281 20 4.47749 20 10.0005C20 15.5235 15.523 20.0005 10 20.0005C8.23279 20.0033 6.49667 19.5357 4.97001 18.6455L0.00401407 20.0005L1.35601 15.0325C0.465107 13.5054 -0.00293838 11.7685 1.38802e-05 10.0005C1.38802e-05 4.47749 4.47701 0.000488281 10 0.000488281ZM6.59201 5.30049L6.39201 5.30849C6.26254 5.31637 6.13599 5.35039 6.02001 5.40849C5.91153 5.46992 5.81251 5.54671 5.72601 5.63649C5.60601 5.74949 5.53801 5.84749 5.46501 5.94249C5.09514 6.42339 4.89599 7.0138 4.89901 7.62049C4.90101 8.11049 5.02901 8.58749 5.22901 9.03349C5.63801 9.93549 6.31101 10.8905 7.19901 11.7755C7.41301 11.9885 7.62301 12.2025 7.84901 12.4015C8.9524 13.373 10.2673 14.0735 11.689 14.4475L12.257 14.5345C12.442 14.5445 12.627 14.5305 12.813 14.5215C13.1043 14.5065 13.3886 14.4276 13.646 14.2905C13.777 14.223 13.9048 14.1496 14.029 14.0705C14.029 14.0705 14.072 14.0425 14.154 13.9805C14.289 13.8805 14.372 13.8095 14.484 13.6925C14.567 13.6065 14.639 13.5055 14.694 13.3905C14.772 13.2275 14.85 12.9165 14.882 12.6575C14.906 12.4595 14.899 12.3515 14.896 12.2845C14.892 12.1775 14.803 12.0665 14.706 12.0195L14.124 11.7585C14.124 11.7585 13.254 11.3795 12.722 11.1375C12.6663 11.1132 12.6067 11.0993 12.546 11.0965C12.4776 11.0895 12.4085 11.0972 12.3433 11.1191C12.2781 11.141 12.2183 11.1766 12.168 11.2235C12.163 11.2215 12.096 11.2785 11.373 12.1545C11.3315 12.2102 11.2744 12.2524 11.2088 12.2755C11.1433 12.2987 11.0723 12.3018 11.005 12.2845C10.9399 12.267 10.876 12.245 10.814 12.2185C10.69 12.1665 10.647 12.1465 10.562 12.1105C9.98808 11.86 9.4567 11.5216 8.98701 11.1075C8.86101 10.9975 8.74401 10.8775 8.62401 10.7615C8.2306 10.3847 7.88774 9.95849 7.60401 9.49349L7.54501 9.39849C7.50264 9.33465 7.46837 9.26579 7.44301 9.19349C7.40501 9.04649 7.50401 8.92849 7.50401 8.92849C7.50401 8.92849 7.74701 8.66249 7.86001 8.51849C7.97001 8.37849 8.06301 8.24249 8.12301 8.14549C8.24101 7.95549 8.27801 7.76049 8.21601 7.60949C7.93601 6.92549 7.64601 6.24449 7.34801 5.56849C7.28901 5.43449 7.11401 5.33849 6.95501 5.31949C6.90101 5.31349 6.84701 5.30749 6.79301 5.30349C6.65872 5.29682 6.52415 5.29815 6.39001 5.30749L6.59201 5.30049Z" fill="#A4A4A4"/>
+                                      </svg>
+                                      
+                              </a>
+                             </span>
+                          </div>
+                        </div>
+                        
                     </div>
                 </div>
-           </div>
-
-           <div class="Section-3 sec w-full flex justify-center items-center mt-[2em]  flex-col gap-[3em]">
-            
-            <div class="partnersTitle fadeIN w-[80%] mr-auto ml-auto flex justify-between items-center  mb-3">
-                <span>
-                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
-                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
-                        </svg>
-                        
-                </span>
-                <h4 class="font-IRANSansWeb700 text-base leading-25.04 font-bold text-b12">
-                    شرکای تجاری
-                </h4>
-                <span>
-                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
-                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
-                        </svg>
-                        
-                </span>
-
-            </div>
-            <div class="PartnersContainer w-full flex justify-center items-center ">
-              <div class="swiper-partner w-full flex justify-center items-center overflow-hidden pb-[1em]">
-                <div class="swiper-wrapper w-full flex justify-center items-center ">
-                    <basis core="print" datamembername="db.aboutGallery">
-                        <layout>
-                            @child
-                        </layout>
-                        <face filter="ord=50"> 
-                            <div class="swiper-slide w-full flex justify-center
-                            items-center flex-col rounded-full bg-f duration-[.4s] ">
-                                <div class="Partner w-full h-full rounded-full bg-f duration-[.4s] flex 
-                                 justify-center items-center flex-col shadow-[rgba(50,50,93,0.25)_0px_6px_12px_-2px,_rgba(0,0,0,0.3)_0px_3px_7px_-3px]">
-                                    <div class="IMG w-full h-full rounded-full bg-f duration-[.4s] flex justify-center items-center flex-col">
-                                        <img src="@largeIMG" alt="makesh-dahesh" title="makesh-dahesh"
-                                         class=" pt-[10px] pb-[10px] pr-[10px] pl-[10px] rounded-full bg-f duration-[.4s]
-                                        object-cover w-full h-full">
-                                    </div>
-                                </div>
-                            </div>
-                        </face>
-                    </basis>
-                </div>
               </div>
+
             </div>
-           </div>
-           <div class="Section-4  w-full flex justify-center items-center  mt-[3em] flex-col  ">
-            <div class="Detail-Container w-full flex justify-center items-center flex-col relative">
-                
-                <basis core="print" datamembername="db.sec2">
-                    <layout>
-                        @child
-                    </layout>
-                    <face filter="ord=51">
-                        <div class="Banner-IMG w-[100%] flex justify-center items-center">
-                            <img src="@largeIMG" alt="makesh-dahesh"
-                             class="w-full object-cove fade-in [&.fade-in]:opacity-0 duration-[.8s]
-                            [&.fade-in]:translate-y-[100%]">
-                        </div>
-                    </face>
-                </basis>
-               
-                <div class="Boxes translate-y-[-4%] w-[90%] flex flex-col justify-start  z-3
-                items-center ml-auto mr-auto gap-[4em]  left-0  right-0">
-                <basis core="print" datamembername="db.aboutus1">
-                    <layout>
-                        @child
-                    </layout>
-                    <face filter="RowNumber=1">
-                        <div class="Box w-full flex justify-center items-center pt-[15px] pb-[30px]
-                        flex-col bg-b4 hover:bg-b7 duration-[.5s] group
-                        shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]" >
-                           <div class="Title-b fadeIN w-full flex justify-start pt-[10px] 
-                            items-center flex-col ">
-                               <p class="text-base font-IRANSansWeb700 fade-in [&.fade-in]:opacity-0 duration-[.8s]
-                               [&.fade-in]:translate-y-[100%] leading-25.4 group-hover:text-f
-                               font-bold  text-b9 text-justify">
-                               @text :
-   
-                               </p>
-                           </div>
-                           <div class="Text-b fadeIN mr-auto ml-auto Title-b w-[90%] gap-[1.2em] flex justify-start items-center flex-col">
-                               <p class="text-sm font-IRANSansWeb300 fade-in [&.fade-in]:opacity-0 duration-[.8s]
-                               [&.fade-in]:translate-y-[100%] leading-21.91 font-light group-hover:text-f
-                                text-b9 text-justify">
-                                @largetext
-                               </p>
-                           </div>
-                       </div>
-                    </face>
-                </basis>
-                <basis core="print" datamembername="db.aboutus1">
-                    <layout>
-                        @child
-                    </layout>
-                    <face filter="RowNumber in (2,3)">
-                        <div class="Box w-full flex justify-center items-center pt-[15px] pb-[30px]
-                        flex-col  hover:bg-b7 duration-[.5s] group
-                        shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]" >
-                           <div class="Title-b w-full flex justify-start  
-                            items-center flex-col fadeIN">
-                               <p class="text-base font-IRANSansWeb700 fade-in [&.fade-in]:opacity-0 duration-[.8s]
-                               [&.fade-in]:translate-y-[100%] leading-25.4 group-hover:text-f
-                               font-bold  text-b9 text-justify">
-                               @text :
-                               </p>
-                           </div>
-                           <div class="Text-b fadeIN mr-auto ml-auto Title-b w-[90%] gap-[1.2em] flex justify-start items-center flex-col">
-                               <p class="text-sm font-IRANSansWeb300 fade-in [&.fade-in]:opacity-0 duration-[.8s]
-                               [&.fade-in]:translate-y-[100%] leading-21.91 font-light group-hover:text-f
-                                text-b9 text-justify">
-                                @largetext
-                               </p>
-                           </div>
-                       </div>
-                    </face>
-                </basis>
-                
-                </div>
-           
-            </div>
+          </div>
+    </main>
+    <div class="Photo_PopUP">
+        <div class="popupContainer">
+         <div class="lightBox">
+                <img src="" alt="">
+         </div>
+         <div id="next">
+             <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <path d="M5.39474 11.7153L5.10615 12L5.39474 12.2847L14.4305 21.2L12.1622 23.4381L0.569522 12L12.1622 0.561928L14.4305 2.8L5.39474 11.7153Z" fill="#131312" stroke="white" stroke-width="0.8"/>
+                 </svg>
+                 
+         </div>
+         <div id="prev">
+          <svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.60526 12.2847L9.89385 12L9.60526 11.7153L0.56952 2.8L2.83784 0.561927L14.4305 12L2.83784 23.4381L0.569521 21.2L9.60526 12.2847Z" fill="#131312" stroke="white" stroke-width="0.8"/>
+              </svg>
+              
+              
+      </div>
+
+         <div class="Lightbox-btn">
+             <span class="btn fullscreen">
+                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M0 16V10.6667H1.77778V12.9778L4.53333 10.2222L5.77778 11.4667L3.02222 14.2222H5.33333V16H0ZM10.6667 16V14.2222H12.9778L10.2222 11.4667L11.4667 10.2222L14.2222 12.9778V10.6667H16V16H10.6667ZM4.53333 5.77778L1.77778 3.02222V5.33333H0V0H5.33333V1.77778H3.02222L5.77778 4.53333L4.53333 5.77778ZM11.4667 5.77778L10.2222 4.53333L12.9778 1.77778H10.6667V0H16V5.33333H14.2222V3.02222L11.4667 5.77778Z" fill="#131312"/>
+                     </svg>
+                     
+             </span>
+       
+             <span class="btn download">
+                 <a href="#" download >
+                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z" fill="#131312"/>
+                     </svg>
+                 </a>
+             </span>
+         </div>
         </div>
-
-        <div class="Section-5 sec w-full flex justify-center items-center  flex-col ">
-            <div class="CertiTitle fadeIN w-[80%] mr-auto ml-auto flex justify-between items-center  mb-3">
-                <span>
-                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
-                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
-                        </svg>
-                        
-                </span>
-                <h5 class="font-IRANSansWeb700 text-base leading-25.04 font-bold text-b12">
-                    گواهی نامه ها و استانداردها
-                </h5>
-                <span>
-                    <svg width="25" height="15" viewBox="0 0 25 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M24.3905 6.26662V1.81182C24.3905 1.42542 24.0769 1.11182 23.6905 1.11182H19.2357V2.51182H22.0007L21.4141 3.09842C20.9199 3.59122 20.3011 3.94122 19.6249 4.11062L19.3379 4.18202C17.8119 4.56422 16.6835 5.81722 16.4609 7.37262L16.3153 8.39462L16.1697 9.41662C16.0283 10.4064 15.3101 11.203 14.3371 11.4466L14.0515 11.518C13.1275 11.749 12.2833 12.2264 11.6113 12.8984L12.6025 13.8882C13.0953 13.394 13.7127 13.044 14.3917 12.8746L14.6759 12.8032C16.2019 12.4224 17.3303 11.1694 17.5543 9.61402L17.6999 8.59202L17.8469 7.57142C17.9883 6.58022 18.7065 5.78362 19.6781 5.54002L19.9651 5.46862C20.8863 5.23762 21.7305 4.76162 22.4039 4.08822L22.9905 3.50162V6.26662H24.3905Z" fill="#BCBDBD"/>
-                        <path d="M13.3905 6.26662V1.81182C13.3905 1.42542 13.0769 1.11182 12.6905 1.11182H8.23573V2.51182H11.0007L10.4141 3.09842C9.91993 3.59122 9.30113 3.94122 8.62493 4.11062L8.33793 4.18202C6.81193 4.56422 5.68353 5.81722 5.46093 7.37262L5.31533 8.39462L5.16973 9.41662C5.02833 10.4064 4.31013 11.203 3.33713 11.4466L3.05153 11.518C2.12753 11.749 1.28333 12.2264 0.611328 12.8984L1.60253 13.8882C2.09533 13.394 2.71273 13.044 3.39173 12.8746L3.67593 12.8032C5.20193 12.4224 6.33033 11.1694 6.55433 9.61402L6.69993 8.59202L6.84693 7.57142C6.98833 6.58022 7.70653 5.78362 8.67813 5.54002L8.96513 5.46862C9.88633 5.23762 10.7305 4.76162 11.4039 4.08822L11.9905 3.50162V6.26662H13.3905Z" fill="#BCBDBD"/>
-                        </svg>
-                        
-                </span>
-
-            </div>
-        
-            <div class="Certificate-Container overflow-hidden  w-[100%] mr-auto ml-auto
-            flex relative justify-start items-center ">
-               <div class="swiper-button-prev w-[41px] h-[41px] absolute  right-0 left-[unset] 
-                 before:hidden flex justify-center items-center
-                after:hidden  bg-b7 z-10 ">
-                  <svg width="20" class="!w-[10px]" height="38"  viewBox="0 0 20 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1L19 19L1 37" stroke="#fff"/>
-                  </svg>
-               </div>
-               <div class="swiper-certificate  pb-[1em] overflow-hidden w-[95%] mr-auto ml-auto flex justify-center items-center">
-                  <div class="swiper-wrapper w-full" >
-                    <basis core="print" datamembername="db.sec2">
-                        <layout>
-                            @child
-                        </layout>
-                        <face filter="ord=52">
-                            <div class="swiper-slide w-full flex justify-center py-[4em]
-                            items-center">
-                                <div class="Product group  duration-[.5s] rounded-[8px] pt-[10px] pb-[30px]
-                                shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)]
-                                 w-[85%] flex justify-start flex-col items-center bg-f">
-                                    <div class="IMG w-full flex justify-center items-center">                                      
-                                        <img src="@largeIMG" alt="@name" title="@name" >                                    
-                                    </div>
-                                    <div class="Title py-[1em] w-full flex justify-center items-center">                                      
-                                        <p class="font-IRANSansWeb500 text-sm font-medium leading-23 text-b9 text-center">
-                                            @name
-                                        </p>                           
-                                    </div>
-                                </div>
-                            </div>
-                        </face>
-                    </basis>                     
-                  </div>
-               </div>
-               <div class="swiper-button-next w-[41px] h-[41px] mr-auto left-0 right-[unset]
-                absolute before:hidden after:hidden 
-               bg-b7 flex justify-center items-center  z-10">
-                  <svg width="20" class="!w-[10px]" height="38" viewBox="0 0 20 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 1L1 19L19 37" stroke="#fff"/>
-                  </svg>     
-               </div>
-
-            </div>
+        <div class="popClose">
+         <svg class="CL" width="15" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M1.23462 21.7172L0.282844 20.7654L9.9068 11.1414L10.0482 11L9.9068 10.8586L0.282843 1.23462L1.23462 0.282843L10.8586 9.9068L11 10.0482L11.1414 9.9068L20.7654 0.282844L21.7172 1.23462L12.0932 10.8586L11.9518 11L12.0932 11.1414L21.7172 20.7654L20.7654 21.7172L11.1414 12.0932L11 11.9518L10.8586 12.0932L1.23462 21.7172Z" fill="#131312" stroke="white" stroke-width="0.4"/>
+         </svg>
         </div>
-        </div>
-
-        <basis core="call" file="footer-mobile-2.inc" pageindex="[##cms.cms.pageindex##]" />
-    </main>     
- 
-      <basis core="call" file="script-mobile.inc" />
-      <script src="[##cms.cms.cdn##]/new/js/aboutUsMobile.js"></script>
+     </div> 
+    <script src="[##cms.cms.cdn##]/_js/gsap.js"></script>
+    <script src="[##cms.cms.cdn##]/_js/scrollTrigger.js"></script>
+    <script src="[##cms.cms.cdn##]/js/splitType.js"></script>
+    <script src="[##cms.cms.cdn##]/_js/jquery/jquery-3.4.0.js"></script>
+    <script src="[##cms.cms.cdn##]/js/imageLoaded.js"></script>
+    <script src="[##cms.cms.cdn##]/js/swiper.js"></script>
+    <script src="[##cms.cms.cdn##]/js/certificate.js"></script>
+    <script>
+        let certis =document.querySelectorAll('.swiper-slidep')
+        let ress =[]
+        certis.forEach(item=>{
+        if(item.getAttribute('data-link') != '') {
+            ress.push(item) 
+        }
+        else{
+            return
+        }
+        })
+       
+       ress.forEach(r=>{
+        console.log(r)
+        let a = document.createElement('a')
+        let a2 = document.createElement('a')
+        let img = r.querySelector('.IMG img')
+        let p =r.querySelector('.Title p')
+        let link = r.getAttribute('data-link')
+        r.querySelector('.IMG').appendChild(a)
+        a.appendChild(img)
+        a.setAttribute('href',link)
+        a.setAttribute('download','')
+        r.querySelector('.Title').appendChild(a2)
+        a2.appendChild(p)
+        a2.setAttribute('href',link)
+        a2.setAttribute('download','')
+       })
+    
+    </script>
 </body>
 </html>

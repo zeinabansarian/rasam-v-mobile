@@ -328,12 +328,58 @@ a{
   background-color: #f9920b;
 }
 
-
+.aboutUS-Mobile .swiper-gallery .swiper-slide .IMG{
+  transform: scale(.9);
+  -webkit-transform: scale(.9);
+  -moz-transform: scale(.9);
+  -ms-transform: scale(.9);
+  -o-transform: scale(.9);
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+.aboutUS-Mobile .Section-6 .Gallerys{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutUS-Mobile .paginations .swiper-pagination-bullet {
+  width: 1px;
+  background-color: #6D6E73;
+  height: 20px;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  margin: auto;
+  opacity: 1 !important;
+  margin: 3px !important;
+}
+.aboutUS-Mobile .paginations .swiper-pagination-bullet-active {
+  background-color: #f9920b !important;
+  height: 25px !important;
+  width: 3px !important;
+}
+.aboutUS-Mobile .swiper-gallery .swiper-slide-active .IMG{
+transform: scale(1.2);
+-webkit-transform: scale(1.2);
+-moz-transform: scale(1.2);
+-ms-transform: scale(1.2);
+-o-transform: scale(1.2);
+transition: all .5s ease;
+-webkit-transition: all .5s ease;
+-moz-transition: all .5s ease;
+-ms-transition: all .5s ease;
+-o-transition: all .5s ease;
+}
 .ProductCat-Mobile header,
 .Product-List-Mobile header,
 .ProductShow header,
 .articleList-Mobile header,
-.articleShow header,
+.articleShowMobile header,
 .Search-Container header,
 .page header{
     background-color: #4C515A;
