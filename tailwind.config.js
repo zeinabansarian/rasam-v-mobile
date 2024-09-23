@@ -46,7 +46,8 @@ module.exports = {
       'IRANYekan500': ['IRANYekan500', 'IRANYekan500'],
       'IRANYekan700': ['IRANYekan700', 'IRANYekan700'],
       'AnjomanMax500': ['AnjomanMax500', 'AnjomanMax500'],
-    
+      'AnjomanMax400': ['AnjomanMax400', 'AnjomanMax400'],
+      'AnjomanMax600': ['AnjomanMax600', 'AnjomanMax600'],
 
     },
     extend: {

@@ -57,6 +57,24 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "AnjomanMax400";
+  src:
+    url("../_fonts/AnjomanMax-Medium.woff") format("woff"),
+    url("../_fonts/AnjomanMax-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AnjomanMax600";
+  src:
+    url("../_fonts/AnjomanMax-Black.woff") format("woff"),
+    url("../_fonts/AnjomanMax-Black.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 
 * {
   font-family: "IRANYekan400";
