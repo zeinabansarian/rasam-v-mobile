@@ -32,9 +32,11 @@ module.exports = {
       'midGray':'#6D6E73',
       'darkGray':'#4C515A',
       'cGray':'#26272B',
+      'aGray':'#26272A',
       'liGray':'#A1A3A9',
       'lightGray':'#E9EAED',
-     
+      'newBlack':'#121213',
+      
       'white':'#ffff',
       'f':'#ffff',
     
@@ -51,10 +53,7 @@ module.exports = {
 
     },
     extend: {
-      spacing: {
-        '1.5': '1.5em',
-        
-      },
+     
       lineHeight: {
         '18.78': '18.78px',
         '64': '64px',
