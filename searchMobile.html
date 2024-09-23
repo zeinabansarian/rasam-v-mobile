@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aboutUs</title>
+    <title>search</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/outputMobile.css">
 </head>
+
 <body>
-    <main class="aboutUS-Mobile overflow-hidden" dir="rtl">
+    <main class="Search-Container overflow-hidden" dir="rtl">
         <header class="MobileHeader [&.GoBottom]:bg-[#4C515A] group z-[9999] flex w-full fixed top-0 
         left-0 justify-center items-center py-8 duration-[.5s]"  dir="rtl">
         <div class="Co w-[90%] mr-auto ml-auto grid grid-cols-[1fr,1fr] justify-center items-center">
@@ -218,227 +219,405 @@
          
         </div>
         </header>
-        <div class="About-Container w-full flex flex-col">
-            <div class="Section-1 Banner w-full flex justify-center items-center">
-              <img src="images/Rectangle 2.png" alt="" class="w-full object-cover">
+        <div class="Search-C w-full flex flex-col mt-[10em] pb-[3em]">
+            <div class="InputBoxes w-[90%] relative mx-auto flex justify-center items-center">
+                <input type="text" placeholder="عبارت مورد نظر را جست و جو کنید">
+                <div class="absolute left-0 top-0 searchIcon2 duration-200 hover:cursor-pointer w-auto flex justify-start items-center">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.8333 15L8.58333 9.75C8.16667 10.0833 7.6875 10.3472 7.14583 10.5417C6.60417 10.7361 6.02778 10.8333 5.41667 10.8333C3.90278 10.8333 2.62153 10.309 1.57292 9.26042C0.524306 8.21181 0 6.93056 0 5.41667C0 3.90278 0.524306 2.62153 1.57292 1.57292C2.62153 0.524306 3.90278 0 5.41667 0C6.93056 0 8.21181 0.524306 9.26042 1.57292C10.309 2.62153 10.8333 3.90278 10.8333 5.41667C10.8333 6.02778 10.7361 6.60417 10.5417 7.14583C10.3472 7.6875 10.0833 8.16667 9.75 8.58333L15 13.8333L13.8333 15ZM5.41667 9.16667C6.45833 9.16667 7.34375 8.80208 8.07292 8.07292C8.80208 7.34375 9.16667 6.45833 9.16667 5.41667C9.16667 4.375 8.80208 3.48958 8.07292 2.76042C7.34375 2.03125 6.45833 1.66667 5.41667 1.66667C4.375 1.66667 3.48958 2.03125 2.76042 2.76042C2.03125 3.48958 1.66667 4.375 1.66667 5.41667C1.66667 6.45833 2.03125 7.34375 2.76042 8.07292C3.48958 8.80208 4.375 9.16667 5.41667 9.16667Z" fill="#161617"/>
+                        </svg>
+                        
+                        
+                </div>
             </div>
-            <div class="Section-2 w-full flex justify-start items-start flex-col mt-[1em]">
-                <div class="Titles w-[90%] mx-auto flex flex-col mb-[.8em]">
-                        <div class="Title-1 w-auto ml-auto flex justify-start items-center
-                        pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
-                        before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
-                            <h1 class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-Gray">
-                                درباره‌ی ما
-                            </h1>
+            
+            <div class="Section-1 w-[90%] flex flex-col mx-auto mb-[1.5em] mt-[1.5em]">
+                <div class="Titles w-full mx-auto flex flex-col mb-[3em] ">
+                    <div class="Title-1 w-auto ml-auto flex justify-start items-center
+                    pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
+                    before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
+                        <h1 class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-Gray">
+                            نتایج جست و جو
+                        </h1>
+                    </div>
+                    <div class="Title-2 w-auto ml-auto flex justify-start items-center">
+                        <h2 class="font-IRANYekan500 font-medium text-base leading-27.64 text-black1">
+                            Search Results
+                        </h2>
+                </div>
+            </div>
+            <div class="NoRes w-full mx-auto flex flex-col gap-4 border-t-[1px] border-b-midGray pt-[1.8em]">
+                <p class="font-IRANYekan700 font-semibold text-lg leading-[31.09px] text-black1">
+                    جست و جو نتیجه‌ای در پی نداشت!
+                </p>
+              <p class="font-IRANYekan400 text-sm font-normal leading-24.18 text-black1">
+                املای کلمه‌ی مورد نظر را بررسی کرده و مجددا برای جست و جو اقدام کنید.
+              </p>
+            </div>
+            </div>
+            <div class="Section-2 sec w-[90%] flex flex-col mx-auto mb-[1.5em] mt-[1.5em]">
+                <div class="Titles w-full mx-auto flex flex-col mb-[3em]">
+                    <div class="Title-1 w-auto ml-auto flex justify-start items-center
+                    pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
+                    before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
+                        <h2 class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-Gray">
+                            محصولات
+                        </h2>
+                    </div>
+                    <div class="Title-2 w-auto ml-auto flex justify-start items-center">
+                        <h2 class="font-IRANYekan500 font-medium text-base leading-27.64 text-black1">
+                            Products
+                        </h2>
+                </div>
+            </div>
+            <div class="products flex w-full mx-auto mb-[2em]" >
+                <div class="swiper-products w-full flex overflow-hidden">
+                    <div class="swiper-wrapper w-full">
+                        <div class="swiper-slide w-full flex">
+                            <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
+                            rounded-bl-[72px] px-[.8em] py-[.8em]">
+                            <a href="" class="w-full flex flex-col">
+                               <div class="IMG w-full flex justify-center items-center">
+                                   <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
+                               </div>
+                               <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
+                               before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
+                                flex justify-start items-center relative">
+                                   <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
+                                   text-base leading-27.64 text-black1 text-center">
+                                       لیفت پروژکتور نوع ۱ الف
+                                   </h3>
+                               </div>
+                               <div class="Text w-full flex justify-start items-start flex-col">
+                                   <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
+                                       توضیحات این محصول که باید اینجا نوشته شود.
+                                   </p>
+                               </div>
+                            </a>
+                             
+                           </div>
                         </div>
-                        <div class="Title-2 w-auto ml-auto flex justify-start items-center">
-                            <h2 class="font-IRANYekan500 font-medium text-base leading-27.64 text-black1">
-                                About Us
-                            </h2>
+                        <div class="swiper-slide w-full flex">
+                            <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
+                            rounded-bl-[72px] px-[.8em] py-[.8em]">
+                            <a href="" class="w-full flex flex-col">
+                               <div class="IMG w-full flex justify-center items-center">
+                                   <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
+                               </div>
+                               <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
+                               before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
+                                flex justify-start items-center relative">
+                                   <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
+                                   text-base leading-27.64 text-black1 text-center">
+                                       لیفت پروژکتور نوع ۱ الف
+                                   </h3>
+                               </div>
+                               <div class="Text w-full flex justify-start items-start flex-col">
+                                   <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
+                                       توضیحات این محصول که باید اینجا نوشته شود.
+                                   </p>
+                               </div>
+                            </a>
+                             
+                           </div>
+                        </div>
+                        <div class="swiper-slide w-full flex">
+                            <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
+                            rounded-bl-[72px] px-[.8em] py-[.8em]">
+                            <a href="" class="w-full flex flex-col">
+                               <div class="IMG w-full flex justify-center items-center">
+                                   <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
+                               </div>
+                               <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
+                               before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
+                                flex justify-start items-center relative">
+                                   <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
+                                   text-base leading-27.64 text-black1 text-center">
+                                       لیفت پروژکتور نوع ۱ الف
+                                   </h3>
+                               </div>
+                               <div class="Text w-full flex justify-start items-start flex-col">
+                                   <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
+                                       توضیحات این محصول که باید اینجا نوشته شود.
+                                   </p>
+                               </div>
+                            </a>
+                             
+                           </div>
+                        </div>
+                        <div class="swiper-slide w-full flex">
+                            <div class="Product w-full  flex flex-col bg-lightGray group duration-[.4s]
+                            rounded-bl-[72px] px-[.8em] py-[.8em]">
+                            <a href="" class="w-full flex flex-col">
+                               <div class="IMG w-full flex justify-center items-center">
+                                   <img src="images/Rectangle 69411.png" alt=" " class="w-auto object-contain">
+                               </div>
+                               <div class="Title w-full before:contents-[''] before:w-0 before:h-[1px] before:bg-black1 
+                               before:absolute before:right-0 before:bottom-0 duration-[.4s] group-hover:before:w-full before:duration-[.4s]
+                                flex justify-start items-center relative">
+                                   <h3 class="font-IRANYekan500 font-medium  mx-0 my-0
+                                   text-base leading-27.64 text-black1 text-center">
+                                       لیفت پروژکتور نوع ۱ الف
+                                   </h3>
+                               </div>
+                               <div class="Text w-full flex justify-start items-start flex-col">
+                                   <p class="font-IRANYekan400 font-normal text-sm leading-24.18 text-midGray">
+                                       توضیحات این محصول که باید اینجا نوشته شود.
+                                   </p>
+                               </div>
+                            </a>
+                             
+                           </div>
+                        </div>
+                        
                     </div>
                 </div>
-
-                <div class="Text w-[90%] mx-auto py-[1.5em] flex flex-col justify-center items-start gap-2">
-                    <h3 class="font-IRANYekan500 font-medium text-base leading-27.64 text-black mb-[1.2em]">
-                        بهترین سیستم‌های صوتی با رسام سیستم
-                    </h3>
-                    <p class="font-IRANYekan300 font-light text-sm leading-24.18 text-black text-justify">
-                        سیستم کنفرانس از ملزومات یک سازمان یا مجموعه‌ای حرفه ای است. اگر تصمیم دارید برای سازمان یا مجموعه خود یک سیستم کنفرانس صوتی خوب خریداری نمایید این مقاله به شما برای یک انتخاب خوب کمک خواهد کرد.
-                    </p>
-                    <p class="font-IRANYekan300 font-light text-sm leading-24.18 text-black text-justify">
-                        سیستم کنفرانس از ملزومات یک سازمان یا مجموعه‌ای حرفه ای است. اگر تصمیم دارید برای سازمان یا مجموعه خود یک سیستم کنفرانس صوتی خوب خریداری نمایید این مقاله به شما برای یک انتخاب خوب کمک خواهد کرد.
-                    </p>
-                    <p class="font-IRANYekan300 font-light text-sm leading-24.18 text-black text-justify">
-                        سیستم کنفرانس از ملزومات یک سازمان یا مجموعه‌ای حرفه ای است. اگر تصمیم دارید برای سازمان یا مجموعه خود یک سیستم کنفرانس صوتی خوب خریداری نمایید این مقاله به شما برای یک انتخاب خوب کمک خواهد کرد.
-                    </p>
-                </div>
+              
             </div>
-            <div class="Section-3 IMG w-full flex justify-center items-center">
-                <img src="images/Rectangle 6925.png" alt="" class="w-full object-cover">
-              </div>
-              <div class="Section-4 Text w-full py-[2em] flex flex-col justify-center items-start bg-lightGray">
-                <div class="Text w-[90%] mx-auto flex flex-col ">
-                    <p class="font-IRANYekan300 font-light text-sm leading-24.18 text-black text-justify">
-                        سیستم کنفرانس از ملزومات یک سازمان یا مجموعه‌ای حرفه ای است. اگر تصمیم دارید برای سازمان یا مجموعه خود یک سیستم کنفرانس صوتی خوب خریداری نمایید این مقاله به شما برای یک انتخاب خوب کمک خواهد کرد.
-                    </p>
-                </div>
-               
             </div>
-            <div class="Section-5 w-full flex justify-start items-start flex-col
-            py-[4em] mt-[3em] bg-lightGray">
-                <div class="Details-Container w-[90%] mx-auto flex flex-col">
-                    <div class="Title w-full flex justify-center items-center">
-                        <div class="Title-1 w-auto mx-auto flex justify-start items-center
-                        pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
-                        before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
-                            <h4 class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-black">
-                                رسام سیستم در یک نگاه
-                            </h4>
-                        </div>
+            <div class="Section-3 sec w-[90%] flex flex-col mx-auto mb-[1.5em] mt-[1.5em]">
+                <div class="Titles w-full mx-auto flex flex-col mb-[3em]">
+                    <div class="Title-1 w-auto ml-auto flex justify-start items-center
+                    pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
+                    before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
+                        <h3 class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-Gray">
+                            مقاله‌ها
+                        </h3>
                     </div>
-                    <div class="Boxes w-full flex  mt-[2em]">
-                        <div class="swiper-box w-full flex relative pb-8 ">
-                            <div class="swiper-wrapper w-full">
-                                <div class="swiper-slide w-full flex">
-                                    <div class="Box w-full flex flex-col gap-2 bg-f rounded-bl-[72px] duration-700 px-[.5em]">
-                                        <div class="Titles w-[90%] mx-auto flex flex-col mt-[1em] mb-2">
-                                            <div class="Title-1 w-auto mx-auto flex justify-center items-center
-                                            pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
-                                            before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
-                                                <p class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-Gray">
-                                                    ماموریت
-                                                </p>
-                                            </div>
-                                            <div class="Title-2 w-auto mx-auto flex justify-start items-center">
-                                                <p class="font-IRANYekan500 font-medium text-base leading-27.64 text-black1">
-                                                    Mission
-                                                </p>
-                                        </div>
-                                    </div>
-                                    <div class="Text w-[90%] mx-auto flex flex-col justify-start items-center mb-[2em]">
-                                        <p class="font-IRANYekan300 font-light text-sm leading-24.18 text-black1">
-                                            طراحی و ارائه خدمات فنی و مهندسی در زمینه صوت، نور و تصویر در تمامی پروژه‌ها با مدیریت هزینه مطابق با درخواست و نیاز مشتریان و کارفرمایان در سراسر ایران
-                                        </p>
-                                    </div>
-                    
-                                    </div>
+                    <div class="Title-2 w-auto ml-auto flex justify-start items-center">
+                        <h3 class="font-IRANYekan500 font-medium text-base leading-27.64 text-black1">
+                            Articles
+                        </h3>
+                </div>
+            </div>
+            <div class="articles flex w-full mx-auto mb-[2em]" >
+         
+                <div class="swiper-Blogs w-full flex overflow-hidden">
+                    <div class="swiper-wrapper w-full">
+                        <div class="swiper-slide w-full flex">
+                            <div class="articBox px-[5%]">
+                                <div class="imgS">
+                                    <a class="flex items-center justify-center" href="" title="@title">
+                                        <img class="w-full" src="images/Rectangle 16.png" alt="@title" title="@title">
+                                    </a>
                                 </div>
-                                <div class="swiper-slide w-full flex">
-                                    <div class="Box w-full flex flex-col gap-2 bg-f rounded-bl-[72px] duration-700 px-[.5em]">
-                                        <div class="Titles w-[90%] mx-auto flex flex-col mt-[1em] mb-2">
-                                            <div class="Title-1 w-auto mx-auto flex justify-center items-center
-                                            pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
-                                            before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
-                                                <p class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-Gray">
-                                                    ماموریت
-                                                </p>
-                                            </div>
-                                            <div class="Title-2 w-auto mx-auto flex justify-start items-center">
-                                                <p class="font-IRANYekan500 font-medium text-base leading-27.64 text-black1">
-                                                    Mission
-                                                </p>
-                                        </div>
-                                    </div>
-                                    <div class="Text w-[90%] mx-auto flex flex-col justify-start items-center mb-[2em]">
-                                        <p class="font-IRANYekan300 font-light text-sm leading-24.18 text-black1">
-                                            طراحی و ارائه خدمات فنی و مهندسی در زمینه صوت، نور و تصویر در تمامی پروژه‌ها با مدیریت هزینه مطابق با درخواست و نیاز مشتریان و کارفرمایان در سراسر ایران
+                                <div class="title mt-4">
+                                    <a href="" title="@title">
+            
+                                        <h6 class="font-IRANYekan500 text-base text-blackT mb-3">
+                                            ویژگی های یک سیستم کنفرانس خوب
+                                        </h6>
+                                    </a>
+                                    <div class="para font-IRANYekan400 text-sm text-justify mb-5 text-midGray">
+                                        <p>
+                                            انواع کابل های فشار قوی و کاربرد شان در اصناف مختلف کابل های فشار قوی زمانی استفاده می شوند که انتقال انرژی با ولتاژ …
                                         </p>
                                     </div>
-                    
-                                    </div>
-                                </div>
-                                <div class="swiper-slide w-full flex">
-                                    <div class="Box w-full flex flex-col gap-2 bg-f rounded-bl-[72px] duration-700 px-[.5em]">
-                                        <div class="Titles w-[90%] mx-auto flex flex-col mt-[1em] mb-2">
-                                            <div class="Title-1 w-auto mx-auto flex justify-center items-center
-                                            pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
-                                            before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
-                                                <p class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-Gray">
-                                                    ماموریت
-                                                </p>
-                                            </div>
-                                            <div class="Title-2 w-auto mx-auto flex justify-start items-center">
-                                                <p class="font-IRANYekan500 font-medium text-base leading-27.64 text-black1">
-                                                    Mission
-                                                </p>
-                                        </div>
-                                    </div>
-                                    <div class="Text w-[90%] mx-auto flex flex-col justify-start items-center mb-[2em]">
-                                        <p class="font-IRANYekan300 font-light text-sm leading-24.18 text-black1">
-                                            طراحی و ارائه خدمات فنی و مهندسی در زمینه صوت، نور و تصویر در تمامی پروژه‌ها با مدیریت هزینه مطابق با درخواست و نیاز مشتریان و کارفرمایان در سراسر ایران
-                                        </p>
-                                    </div>
-                    
-                                    </div>
+            
+                                    <a class="flex items-center gap-x-4" href="" title="@title">
+                                        <span>
+                                            مشاهده بیشتر
+                                        </span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 16.6162L0 8.61621L8 0.616211L9.425 2.01621L3.825 7.61621L16 7.61621V9.61621H3.825L9.425 15.2162L8 16.6162Z" fill="#161617"/>
+                                            </svg>
+                                            
+                                    </a>
                                 </div>
                             </div>
-                            
-                   <!-- If we need scrollbar -->
-                   <div class="swiper-scrollbar relProScrollbar !w-90p mx-auto opacity-100 bg-liGray !left-0 right-0"></div>
                         </div>
-                     
+                        <div class="swiper-slide w-full flex">
+                            <div class="articBox px-[5%]">
+                                <div class="imgS">
+                                    <a class="flex items-center justify-center" href="" title="@title">
+                                        <img class="w-full" src="images/Rectangle 16.png" alt="@title" title="@title">
+                                    </a>
+                                </div>
+                                <div class="title mt-4">
+                                    <a href="" title="@title">
+            
+                                        <h6 class="font-IRANYekan500 text-base text-blackT mb-3">
+                                            ویژگی های یک سیستم کنفرانس خوب
+                                        </h6>
+                                    </a>
+                                    <div class="para font-IRANYekan400 text-sm text-justify mb-5 text-midGray">
+                                        <p>
+                                            انواع کابل های فشار قوی و کاربرد شان در اصناف مختلف کابل های فشار قوی زمانی استفاده می شوند که انتقال انرژی با ولتاژ …
+                                        </p>
+                                    </div>
+            
+                                    <a class="flex items-center gap-x-4" href="" title="@title">
+                                        <span>
+                                            مشاهده بیشتر
+                                        </span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 16.6162L0 8.61621L8 0.616211L9.425 2.01621L3.825 7.61621L16 7.61621V9.61621H3.825L9.425 15.2162L8 16.6162Z" fill="#161617"/>
+                                            </svg>
+                                            
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full flex">
+                            <div class="articBox px-[5%]">
+                                <div class="imgS">
+                                    <a class="flex items-center justify-center" href="" title="@title">
+                                        <img class="w-full" src="images/Rectangle 16.png" alt="@title" title="@title">
+                                    </a>
+                                </div>
+                                <div class="title mt-4">
+                                    <a href="" title="@title">
+            
+                                        <h6 class="font-IRANYekan500 text-base text-blackT mb-3">
+                                            ویژگی های یک سیستم کنفرانس خوب
+                                        </h6>
+                                    </a>
+                                    <div class="para font-IRANYekan400 text-sm text-justify mb-5 text-midGray">
+                                        <p>
+                                            انواع کابل های فشار قوی و کاربرد شان در اصناف مختلف کابل های فشار قوی زمانی استفاده می شوند که انتقال انرژی با ولتاژ …
+                                        </p>
+                                    </div>
+            
+                                    <a class="flex items-center gap-x-4" href="" title="@title">
+                                        <span>
+                                            مشاهده بیشتر
+                                        </span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 16.6162L0 8.61621L8 0.616211L9.425 2.01621L3.825 7.61621L16 7.61621V9.61621H3.825L9.425 15.2162L8 16.6162Z" fill="#161617"/>
+                                            </svg>
+                                            
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full flex">
+                            <div class="articBox px-[5%]">
+                                <div class="imgS">
+                                    <a class="flex items-center justify-center" href="" title="@title">
+                                        <img class="w-full" src="images/Rectangle 16.png" alt="@title" title="@title">
+                                    </a>
+                                </div>
+                                <div class="title mt-4">
+                                    <a href="" title="@title">
+            
+                                        <h6 class="font-IRANYekan500 text-base text-blackT mb-3">
+                                            ویژگی های یک سیستم کنفرانس خوب
+                                        </h6>
+                                    </a>
+                                    <div class="para font-IRANYekan400 text-sm text-justify mb-5 text-midGray">
+                                        <p>
+                                            انواع کابل های فشار قوی و کاربرد شان در اصناف مختلف کابل های فشار قوی زمانی استفاده می شوند که انتقال انرژی با ولتاژ …
+                                        </p>
+                                    </div>
+            
+                                    <a class="flex items-center gap-x-4" href="" title="@title">
+                                        <span>
+                                            مشاهده بیشتر
+                                        </span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 16.6162L0 8.61621L8 0.616211L9.425 2.01621L3.825 7.61621L16 7.61621V9.61621H3.825L9.425 15.2162L8 16.6162Z" fill="#161617"/>
+                                            </svg>
+                                            
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide w-full flex">
+                            <div class="articBox px-[5%]">
+                                <div class="imgS">
+                                    <a class="flex items-center justify-center" href="" title="@title">
+                                        <img class="w-full" src="images/Rectangle 16.png" alt="@title" title="@title">
+                                    </a>
+                                </div>
+                                <div class="title mt-4">
+                                    <a href="" title="@title">
+            
+                                        <h6 class="font-IRANYekan500 text-base text-blackT mb-3">
+                                            ویژگی های یک سیستم کنفرانس خوب
+                                        </h6>
+                                    </a>
+                                    <div class="para font-IRANYekan400 text-sm text-justify mb-5 text-midGray">
+                                        <p>
+                                            انواع کابل های فشار قوی و کاربرد شان در اصناف مختلف کابل های فشار قوی زمانی استفاده می شوند که انتقال انرژی با ولتاژ …
+                                        </p>
+                                    </div>
+            
+                                    <a class="flex items-center gap-x-4" href="" title="@title">
+                                        <span>
+                                            مشاهده بیشتر
+                                        </span>
+                                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 16.6162L0 8.61621L8 0.616211L9.425 2.01621L3.825 7.61621L16 7.61621V9.61621H3.825L9.425 15.2162L8 16.6162Z" fill="#161617"/>
+                                            </svg>
+                                            
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="Section-6 w-full flex justify-start items-start flex-col
-            pt-[1em] ">
-                <div class="Customer-Container w-full flex flex-col">
-                    <div class="Titles w-[90%] mx-auto flex flex-col mt-[1em] mb-2">
-                        <div class="Title-1 w-auto ml-auto flex justify-center items-center
-                        pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
-                        before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
-                            <p class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-Gray">
-                                رضایت مشتریان
-                            </p>
-                        </div>
-                        <div class="Title-2 w-auto ml-auto flex justify-start items-center">
-                            <p class="font-IRANYekan500 font-medium text-base leading-27.64 text-black1">
-                                Customer satisfaction
-                            </p>
+            </div>
+            <div class="Section-4 sec w-[90%] flex flex-col mx-auto mb-[1.5em] mt-[1.5em]">
+                <div class="Titles w-full mx-auto flex flex-col mb-[3em]">
+                    <div class="Title-1 w-auto ml-auto flex justify-start items-center
+                    pb-[.5em] relative before:contents-[''] before:w-full before:h-[1px] before:bg-Orange 
+                    before:absolute before:right-0 before:bottom-0 duration-[.4s] before:duration-[.4s]">
+                        <h4 class="font-IRANYekan400 font-normal text-lg leading-[31.09px] text-Gray">
+                            پروژه‌ها
+                        </h4>
+                    </div>
+                    <div class="Title-2 w-auto ml-auto flex justify-start items-center">
+                        <h4 class="font-IRANYekan500 font-medium text-base leading-27.64 text-black1">
+                            Projects
+                        </h4>
+                </div>
+            </div>
+            <div class="projects flex w-full mx-auto mb-[2em]" >
+                <div class="swiper-projects w-full flex overflow-hidden">
+                    <div class="swiper-wrapper w-full">
+                        <div class="swiper-slide w-full flex">
+                    
+                            <div class="projectBox">
+                                <a href="" title="@title">
+                                    <div class="imgS">
+                                        <img class="w-full rounded-bl-[50px]" src="images/Rectangle 14.png" alt="@title" title="@title">
+                                    </div>
+                                    <h3 class="font-IRANYekan400 font-normal leading-24.18 text-sm text-blackT mt-3">
+                                        پروژه اداری و تجاری
+                                    </h3>
+                                </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide w-full flex">
+                    
+                            <div class="projectBox">
+                                <a href="" title="@title">
+                                    <div class="imgS">
+                                        <img class="w-full rounded-bl-[50px]" src="images/Rectangle 14.png" alt="@title" title="@title">
+                                    </div>
+                                    <h3 class="font-IRANYekan400 font-normal leading-24.18 text-sm text-blackT mt-3">
+                                        پروژه اداری و تجاری
+                                    </h3>
+                                </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide w-full flex">
+                    
+                            <div class="projectBox">
+                                <a href="" title="@title">
+                                    <div class="imgS">
+                                        <img class="w-full rounded-bl-[50px]" src="images/Rectangle 14.png" alt="@title" title="@title">
+                                    </div>
+                                    <h3 class="font-IRANYekan400 font-normal leading-24.18 text-sm text-blackT mt-3">
+                                        پروژه اداری و تجاری
+                                    </h3>
+                                </a>
+                            </div>
+                          </div>
                     </div>
                 </div>
-                <div class="Gallerys w-full flex flex-col justify-start items-start pb-[4em]"
-                 style="background-image: url('images/pattern3.png');">
-                    <div class="Gallery-Container w-full mx-auto flex justify-center
-                     items-center flex-col mt-[2em]" >
-                
-                      <div class="swiper-gallery w-full mx-auto flex overflow-hidden py-[2em]">
-                          <div class="swiper-wrapper w-full">
-                              <div class="swiper-slide w-full flex justify-center items-center relative">
-                                 <div class="IMG w-full flex justify-center items-center">
-                                    <img src="/images/Rectangle 6834.png" alt="" class="w-full object-cover">
-                                 </div>
-                              </div>
-                              <div class="swiper-slide w-full flex justify-center items-center relative">
-                                  <div class="IMG w-full flex justify-center items-center">
-                                   <img src="/images/Rectangle 6831.jpg" alt="" class="w-full object-cover">
-                                  </div>
-                               </div>
-                               <div class="swiper-slide w-full flex justify-center items-center relative">
-                                  <div class="IMG w-full flex justify-center items-center">
-                                   <img src="/images/Rectangle 6834.png" alt="" class="w-full object-cover">
-                                  </div>
-                               </div>
-                               <div class="swiper-slide w-full flex justify-center items-center relative">
-                                <div class="IMG w-full flex justify-center items-center">
-                                    <img src="/images/Rectangle 6831.jpg" alt="" class="w-full object-cover">
-                                </div>
-                             </div>
-                             <div class="swiper-slide w-full flex justify-center items-center relative">
-                                 <div class="IMG w-full flex justify-center items-center">
-                                  <img src="/images/Rectangle 6831.jpg" alt="" class="w-full object-cover">
-                                 </div>
-                              </div>
-                              <div class="swiper-slide w-full flex justify-center items-center relative">
-                                 <div class="IMG w-full flex justify-center items-center">
-                                  <img src="/images/Rectangle 6834.png" alt="" class="w-full object-cover">
-                                 </div>
-                              </div>
-                              <div class="swiper-slide w-full flex justify-center items-center relative">
-                                <div class="IMG w-full flex justify-center items-center">
-                                    <img src="/images/Rectangle 6831.jpg" alt="" class="w-full object-cover">
-                                </div>
-                             </div>
-                             <div class="swiper-slide w-full flex justify-center items-center relative">
-                                 <div class="IMG w-full flex justify-center items-center">
-                                  <img src="/images/Rectangle 6831.jpg" alt="" class="w-full object-cover">
-                                 </div>
-                              </div>
-                              <div class="swiper-slide w-full flex justify-center items-center relative">
-                                 <div class="IMG w-full flex justify-center items-center">
-                                  <img src="/images/Rectangle 6834.png" alt="" class="w-full object-cover">
-                                 </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="paginations w-full flex justify-center items-center gap-[3em] mt-[3em]">
-                          <div class="pagination w-[100px] translate-y-[.4em] flex justify-center items-center gap-3 relative">
-                              <div class="swiper-pagination w-full flex flex-row justify-center items-center"></div>
-                          </div>
-                      </div>
-                     </div>
-              </div>
-                </div>
+            </div>
             </div>
             <footer class="MobileFooter w-full flex flex-col bg-darkGray py-[1em]">
                 <div class="footer w-full flex flex-col">
@@ -582,7 +761,7 @@
                        
                     </div>
                 </div>
-             </footer>
+            </footer>
         </div>
     </main>
     <script src="js/gsap.js"></script>
@@ -591,6 +770,6 @@
     <script src="js/swiper.js"></script>
     <script src="js/scrollTrigger.js"></script>
     <script src="js/configMobile.js"></script>
-    <script src="js/aboutusMobile.js"></script>
+    <script src="js/searchMobile.js"></script>
 </body>
 </html>

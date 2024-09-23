@@ -49,10 +49,10 @@ OpBtn.addEventListener('click',()=>{
             }, 1000);
     }
 })
-let searchIcon = document.querySelector('header .searchIconHeader')
-let input = document.querySelector('.InputBox')
+let searchIcon = document.querySelector('header .searchI')
+let inputpop = document.querySelector('.popSearch')
 searchIcon.addEventListener('click',()=>{
-    input.classList.toggle('OpenS')
+    inputpop.classList.toggle('OpenS')
     searchIcon.classList.toggle('OpenS')
     if(searchIcon.classList.contains('OpenS')){
         let inputt = document.querySelector('header input#search')
@@ -61,9 +61,9 @@ searchIcon.addEventListener('click',()=>{
             return
              }
            else{
-               console.log('val',input.value);
+               console.log('val',inputt.value);
                setTimeout(()=>{
-              window.location.href = `/search.bc?q=${input.value}`
+              window.location.href = `/search.bc?q=${inputt.value}`
                },1000)}
     }
     else{
@@ -78,6 +78,10 @@ searchIcon.addEventListener('click',()=>{
               window.location.href = `/search.bc?q=${inputt.value}`
                },1000)}
     }
+})
+document.querySelector('.ClosPop').addEventListener('click',()=>{
+    inputpop.classList.toggle('OpenS')
+    searchIcon.classList.toggle('OpenS') 
 })
 let pro = document.querySelector('.innerPro')
 let innerPro = document.querySelector('header .Innerr')
@@ -96,8 +100,8 @@ inputt.addEventListener("keypress", function(event) {
         event.preventDefault();
       console.log('clicked');
   console.log('val',inputt );
-  console.log('val',input.value);
-    window.location.href = `/search.bc?q=${inputف.value}`
+  console.log('val',inputt.value);
+    window.location.href = `/search.bc?q=${inputt.value}`
   setTimeout(() => {
    
   }, 1000);

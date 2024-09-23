@@ -375,6 +375,38 @@ transition: all .5s ease;
 -ms-transition: all .5s ease;
 -o-transition: all .5s ease;
 }
+.popSearch input{
+  border: none;
+  background-color: transparent;
+  padding-bottom: .5em;
+}
+.popSearch input::placeholder{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24.18px;
+  font-family: "IRANYekan400";
+  color: #A1A3A9;
+}
+.popSearch .left{
+  border-bottom: 1px solid #ffff;
+}
+
+.popSearch::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 12%;
+  width: 16px;
+  height: 16px;
+  border-bottom: solid 16px #4C515A;
+  border-left: solid 16px transparent;
+  border-right: solid 16px transparent;
+  transform: translateY(-73%);
+  -webkit-transform: translateY(-73%);
+  -moz-transform: translateY(-73%);
+  -ms-transform: translateY(-73%);
+  -o-transform: translateY(-73%);
+}
 .ProductCat-Mobile header,
 .Product-List-Mobile header,
 .ProductShow header,
@@ -385,6 +417,55 @@ transition: all .5s ease;
     background-color: #4C515A;
 
 }
+.Search-Container .InputBoxes .searchIcon{
+  left: 6%;
+  top: 41%;
+
+}
+.Search-Container .Search-C::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  background-image:url('../images/pattern3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+  width: 100vw;
+}
+.Search-Container .sec{
+  position: relative;
+}
+.Search-Container .sec::before{
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: #6D6E73;
+  right: 0;
+  margin: auto;
+}
+.Search-Container input{
+height: 70px;
+width: 100%;
+font-size: 14px !important; 
+font-weight: 400 !important;
+line-height: 24.18px !important;
+background-color: transparent;
+color: #161617;
+border: 1px solid #161617;
+padding-right: 1em;
+}
+.Search-Container input::placeholder{
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 24.18px !important;
+  color: #6D6E73; 
+  }
 header .Menu-Container{
     background: #ffffff;
 
